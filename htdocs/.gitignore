@@ -1,0 +1,10 @@
+# Ignorer les fichiers de logs
+*.log
+*.pid
+
+# Ignorer les fichiers temporaires
+tmp/
+phpMyAdmin/tmp/
+
+# Ignorer les fichiers MySQL locaux (dans le dépôt uniquement)
+mysql/data/
