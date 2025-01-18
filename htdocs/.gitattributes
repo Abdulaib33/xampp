@@ -1,2 +1,24 @@
 # Assurez-vous que tous les fichiers texte utilisent LF
 * text=auto
+# Ignorer les fichiers temporaires
+/tmp
+*.tmp
+
+# Ignorer les logs Apache et MySQL
+../apache/logs/
+../mysql/data/
+
+# Ignorer les fichiers spécifiques à XAMPP
+../xampp-control.log
+
+# Ignorer les fichiers Twig temporaires
+../phpMyAdmin/tmp/
+
+# Ignorer les sessions PHP
+../tmp/sess_*
+
+# Ignorer les fichiers de base de données locaux
+../mysql/data/*
+
+# Exceptions (si nécessaire, ne pas ignorer certains fichiers précis)
+!../mysql/data/keep_this_file.sql
