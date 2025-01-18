@@ -1,0 +1,78 @@
+20:38:35  [main] 	Initializing Control Panel
+20:38:36  [main] 	Windows Version:  Home  64-bit
+20:38:36  [main] 	XAMPP Version: 8.2.12
+20:38:36  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+20:38:36  [main] 	You are not running with administrator rights! This will work for
+20:38:36  [main] 	most application stuff but whenever you do something with services
+20:38:36  [main] 	there will be a security dialogue or things will break! So think 
+20:38:36  [main] 	about running this application with administrator rights!
+20:38:36  [main] 	XAMPP Installation Directory: "c:\xampp\"
+20:38:36  [main] 	Checking for prerequisites
+20:38:40  [main] 	All prerequisites found
+20:38:40  [main] 	Initializing Modules
+20:38:40  [Tomcat] 	Problem detected!
+20:38:40  [Tomcat] 	Port 8080 in use by ""C:\Program Files\MiniTool ShadowMaker\AgentService.exe""!
+20:38:40  [Tomcat] 	Tomcat WILL NOT start without the configured ports free!
+20:38:40  [Tomcat] 	You need to uninstall/disable/reconfigure the blocking application
+20:38:40  [Tomcat] 	or reconfigure Tomcat and the Control Panel to listen on a different port
+20:38:40  [main] 	Starting Check-Timer
+20:38:40  [main] 	Control Panel Ready
+20:38:43  [Apache] 	Attempting to start Apache app...
+20:38:43  [Apache] 	Status change detected: running
+20:38:43  [mysql] 	Attempting to start MySQL app...
+20:38:46  [mysql] 	Status change detected: running
+21:45:00  [main] 	Deinitializing Modules
+21:45:00  [main] 	Deinitializing Control Panel
+
+08:58:11  [main] 	Initializing Control Panel
+08:58:11  [main] 	Windows Version:  Home  64-bit
+08:58:12  [main] 	XAMPP Version: 8.2.12
+08:58:12  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+08:58:12  [main] 	You are not running with administrator rights! This will work for
+08:58:12  [main] 	most application stuff but whenever you do something with services
+08:58:12  [main] 	there will be a security dialogue or things will break! So think 
+08:58:12  [main] 	about running this application with administrator rights!
+08:58:12  [main] 	XAMPP Installation Directory: "c:\xampp\"
+08:58:12  [main] 	Checking for prerequisites
+08:58:15  [main] 	All prerequisites found
+08:58:15  [main] 	Initializing Modules
+08:58:15  [Tomcat] 	Problem detected!
+08:58:15  [Tomcat] 	Port 8080 in use by ""C:\Program Files\MiniTool ShadowMaker\AgentService.exe""!
+08:58:15  [Tomcat] 	Tomcat WILL NOT start without the configured ports free!
+08:58:15  [Tomcat] 	You need to uninstall/disable/reconfigure the blocking application
+08:58:15  [Tomcat] 	or reconfigure Tomcat and the Control Panel to listen on a different port
+08:58:15  [main] 	Starting Check-Timer
+08:58:15  [main] 	Control Panel Ready
+08:58:17  [Apache] 	Attempting to start Apache app...
+08:58:18  [Apache] 	Status change detected: running
+08:58:18  [mysql] 	Attempting to start MySQL app...
+08:58:21  [mysql] 	Status change detected: running
+15:46:24  [main] 	Deinitializing Modules
+15:46:24  [main] 	Deinitializing Control Panel
+
+09:11:02  [main] 	Initializing Control Panel
+09:11:02  [main] 	Windows Version:  Home  64-bit
+09:11:02  [main] 	XAMPP Version: 8.2.12
+09:11:02  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+09:11:02  [main] 	You are not running with administrator rights! This will work for
+09:11:02  [main] 	most application stuff but whenever you do something with services
+09:11:02  [main] 	there will be a security dialogue or things will break! So think 
+09:11:02  [main] 	about running this application with administrator rights!
+09:11:02  [main] 	XAMPP Installation Directory: "c:\xampp\"
+09:11:02  [main] 	Checking for prerequisites
+09:11:06  [main] 	All prerequisites found
+09:11:06  [main] 	Initializing Modules
+09:11:06  [Tomcat] 	Problem detected!
+09:11:06  [Tomcat] 	Port 8080 in use by ""C:\Program Files\MiniTool ShadowMaker\AgentService.exe""!
+09:11:06  [Tomcat] 	Tomcat WILL NOT start without the configured ports free!
+09:11:06  [Tomcat] 	You need to uninstall/disable/reconfigure the blocking application
+09:11:06  [Tomcat] 	or reconfigure Tomcat and the Control Panel to listen on a different port
+09:11:06  [main] 	Starting Check-Timer
+09:11:06  [main] 	Control Panel Ready
+09:11:09  [Apache] 	Attempting to start Apache app...
+09:11:09  [Apache] 	Status change detected: running
+09:11:10  [mysql] 	Attempting to start MySQL app...
+09:11:13  [mysql] 	Status change detected: running
+10:46:35  [main] 	Deinitializing Modules
+10:46:35  [main] 	Deinitializing Control Panel
+

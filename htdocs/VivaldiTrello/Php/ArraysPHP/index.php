@@ -48,7 +48,13 @@ Pourquoi ? La modification peut être faite directement en accédant à l’inde
 
 <?php 
 
+    $exercices2 = [3, 2, 1,  4, 5, 5, 6] ;
 
+    echo $exercices2[2] ."<br>";
+    echo "<br>";
+    $exercices2[2] = 28;
+    echo $exercices2[2];
+    echo "<br>";
 
 ?>
 
@@ -63,6 +69,28 @@ Pourquoi ? foreach est la boucle la plus adaptée pour les tableaux associatifs 
 
 -->
 
+<?php 
+
+    echo "<br> exerices 3" . "<br>";
+
+    $exercices3 = [
+        "nom" => "Abdoulaye",
+        "Age" => 21,
+        "ville" => "liège"
+    ];
+
+    echo $exercices3['ville'];
+
+    echo '<br>';
+
+    forEach ($exercices3 as $key => $value) {
+
+        echo ' '. $key .' => '. $value .'<br>';
+
+    }
+
+?>
+
 
 
 <!-- Exercice 4 : Parcours d'un tableau associatif avec foreach
@@ -76,6 +104,21 @@ Pourquoi ? foreach est spécifiquement conçue pour itérer à travers des table
 
 -->
 
+<?php 
+
+    echo "Exercices 4 : " . "<br>";
+
+    $exercices4 = [
+        "Nom" => "Ibrahima",
+        "Age" => "22",
+        "Ville" => "Liège"
+    ];
+
+    foreach ($exercices4 as $index => $value) {
+        echo " clé : ". $index ." => ". $value ."<br>";
+    }
+
+?>
 
 
 <!-- Exercice 5 : Ajouter des éléments dans un tableau
@@ -90,7 +133,41 @@ Pourquoi ? L’ajout est une opération directe. Tu n’as pas besoin d’une bo
 
 -->
 
+<?php 
 
+    echo "<br> Exercices 5 : " . "<br>";
+
+    $exercices5 = [];
+
+    echo sizeof($exercices5) . "<br>";
+
+    array_push($exercices5, "Mangue", "Avocat", "Kiwi") . "<br>"; // index table(table indexé)
+
+    echo sizeof($exercices5) . "<br>"; 
+
+    foreach ($exercices5 as $x => $y) {
+
+        echo " clé : " . $x . " => " . $y . "<br>";
+
+    }
+
+    $exercices5 += ["Color" => "Blue", "Place" => "Fleron", "Humor" => "peace"]; // Assiociative Table(table associatif)
+
+    foreach ($exercices5 as $i => $j) {
+
+        echo " clé : " . $i . " => " . $j . "<br>"; 
+
+    }
+
+    echo array_shift($exercices5) . "<br>"; // always remove the first element 
+
+    echo array_unshift($exercices5, "Banana") . "<br>"; // Always add an element to the beginning of an array 
+
+    echo array_pop($exercices5) . "<br>"; // Always removes an element from the end of an array.
+
+
+
+?>
 
 <!-- Exercice 6 : Supprimer un élément d'un tableau
 Objectif : Apprendre à supprimer un élément d’un tableau, que ce soit par son index ou par sa valeur.
@@ -104,7 +181,26 @@ Pourquoi ? L’opération de suppression peut être accomplie avec des fonctions
 
 -->
 
+<?php 
 
+    echo "<br> Exercices 6 : " . "<br>";
+
+    $exercices6 = [
+        "Best" => "Roblox",
+        "Nom" => "Abdoulaye",
+        "prenom" => "Bayo",
+        245
+    ];
+
+    echo sizeof($exercices6) . "<br>"; // 4
+    unset($exercices6["Best"]); // remove the element with the key "Best" => "Roblox"
+    unset($exercices6[0]); // remove the element with the key 245"
+    echo sizeof($exercices6) . "<br>"; // 2
+
+    foreach ($exercices6 as $x => $y) {
+        echo "clé : ". $x . " => ". $y . "<br>";
+    }
+?>
 
 <!-- Exercice 7 : Tri d'un tableau
 Objectif : Apprendre à trier un tableau.
@@ -119,7 +215,27 @@ Pourquoi ? Le tri d'un tableau est une opération simple à l'aide de fonctions 
 
 -->
 
+<?php 
 
+    $exercices7 = [
+        "b",
+        "a",
+        "d",
+        "c",
+    ];
+
+    echo sort($exercices7);
+    
+    foreach ($exercices7 as $exercices7foreach) {
+        echo "<br>" . $exercices7foreach . "<br>";
+    }
+    
+    echo rsort($exercices7) . "<br>";
+
+    foreach ($exercices7 as $exercices7foreach) {
+        echo "<br>" . $exercices7foreach . "<br>";
+    }
+?>
 
 <!-- Exercice 8 : Rechercher dans un tableau
 Objectif : Apprendre à rechercher un élément spécifique dans un tableau.
@@ -146,7 +262,37 @@ Pourquoi ? Si ton tableau est multidimensionnel, foreach est idéal pour accéde
 
 -->
 
+<?php 
 
+    $exercice9 = [
+        ["Nom" => "Abdoulaye", "Age" => 21, "Ville" => "Liège"],
+        ["Nom" => "Ibrahima", "Age" => 22, "Ville" => "Liège"],
+        ["Nom" => "Moussa", "Age" => 23, "Ville" => "Liège"],
+        ["Nom" => "COUCOUCOU", "Age" => 24, "Ville" => "Liège"],
+        ["Nom" => "Aminata", "Age" => 25, "Ville" => "Liège"]
+    ];
+
+    foreach ($exercice9 as $exercice9foreach) {
+        echo "Nom : " . $exercice9foreach["Nom"] . "<br>";
+        echo "Age : " . $exercice9foreach["Age"] . "<br>";
+        echo "Ville : " . $exercice9foreach["Ville"] . "<br>";
+        echo "<br>";
+    }
+
+    // $exercice9 = [
+    //     [1, 2, 3, 4, 5, 6],
+    //     [2, 3, 4, 5, 6, 7],
+    //     [3, 4, 5, 6, 7, 8],
+    //     [4, 5, 6, 7, 8, 9],
+    //     [5, 6, 7, 8, 9, 10]
+    // ];
+
+    // foreach ($exercice9 as $exercice9foreach) {
+    //     foreach ($exercice9foreach as $exercice9foreach2) {
+    //         echo $exercice9foreach2 . "<br>";
+    //     }
+    // }
+?>
 
 <!-- Exercice 10 : Fusionner deux tableaux
 Objectif : Apprendre à fusionner deux tableaux (indexés ou associatifs) en un seul tableau.
