@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise1</title>
+</head>
+<body>
+    
+    <div>
+        <h1>Todo List</h1>
+        <input type="text" id="task" placeholder="Enter a task">
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script>
+
+        function addTask() {
+            let inputTask = document.getElementById("task");
+            var task = inputTask.value;
+            
+            let taskList = document.getElementById("taskList")
+            
+
+            // let taskLI = document.createElement("li")
+            // document.body.div.ul.appenchild(taskLI)
+
+            // taskLI.textContent = task
+
+            inputTask.value = ""
+        }
+        
+
+    </script>
+</body>
+</html>

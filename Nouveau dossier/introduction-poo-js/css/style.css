@@ -1,0 +1,35 @@
+header {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: white;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  color: #3498db;
+  background-color: blue;
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: #2ecc71;
+}
+nav ul li a:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

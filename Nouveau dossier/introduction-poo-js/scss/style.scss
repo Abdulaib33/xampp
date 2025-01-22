@@ -1,0 +1,48 @@
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-stack: 'Helvetica Neue', sans-serif;
+
+@import 'header';
+@import 'footer';
+
+// Mixins
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+// Base styles
+body {
+    font-family: $font-stack;
+    color: $primary-color;
+    background-color: blue;
+    text-align: center;
+
+}
+
+// Nested rules
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        
+        li { 
+            display: inline-block; 
+            
+            a {
+                display: block;
+                padding: 6px 12px;
+                text-decoration: none;
+                color: $secondary-color;
+                
+                &:hover {
+                    background-color: $primary-color;
+                    color: white;
+                }
+            }
+        }
+    }
+}
