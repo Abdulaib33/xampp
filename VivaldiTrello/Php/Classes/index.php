@@ -6,6 +6,13 @@
     <title>Classes</title>
 </head>
 <body>
+
+<style>
+    body {
+        background-color: darkslategray;
+        color: wheat;
+    }
+</style>
 <!-- 
 1️⃣ Exercice : Créer et utiliser une classe simple
 Objectif : Apprendre à déclarer une classe, créer des propriétés et méthodes, et instancier un objet.
@@ -381,6 +388,34 @@ Instruction :
 Crée un trait Maintenance avec une méthode scheduleService() qui retourne un message du type : « Service scheduled for next month. »
 Inclue ce trait dans les classes Car et ElectricCar. -->
 
+
+<?php 
+
+trait Maintenace {
+    public function scheduleService() {
+        return "Service scheduled for nex month";
+    }
+}
+
+class Car7 {
+
+    use Maintenace;
+
+}
+
+class ElectricCar7 {
+    
+    use Maintenace;
+
+}
+
+$car7 = new Car7();
+$ElectricCar7 = new ElectricCar7();
+
+echo "<br>" . $car7->scheduleService() . "<br>";
+echo $ElectricCar7->scheduleService() . "<br> <br>";
+
+?>
 
 
 <!-- 8️⃣ Exercice : Méthodes magiques
