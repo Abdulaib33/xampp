@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body { font-family: Arial; max-width: 600px; margin: 20px auto; }
+        #task-input { padding: 8px; width: 70%; }
+        button { padding: 8px 12px; }
+        .task { display: flex; justify-content: space-between; padding: 10px; margin: 5px 0; background: #f5f5f5; }
+        .completed { text-decoration: line-through; opacity: 0.7; }
+    </style>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <input type="text" id="task-input" placeholder="Enter a task">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="task-list"></ul>
+
+    <script>
+        // Fetch and display tasks
+        async function fetchTasks() {
+            try {
+                const response = await fetch("http://localhost/vivaldiTrello/Todo-List_js_php/api.php");
+                const tasks = await response.json();
+                const taskList = document.getElementById("task-list");
+                taskList.innerHTML = "";
+
+                tasks.forEach(task => {
+                    const li = document.createElement("li");
+                    li.className = `task ${task.is_completed ? 'completed' : ''}`;
+                    li.innerHTML = `
+                        <span>${task.task_name}</span>
+                        <div>
+                            <button onclick="toggleComplete(${task.id}, ${task.is_completed})">
+                                ${task.is_completed ? 'Undo' : 'Complete'}
+                            </button>
+                            <button onclick="deleteTask(${task.id})">Delete</button>
+                        </div>
+                    `;
+                    taskList.appendChild(li);
+                });
+            } catch (error) {
+                console.error("Error fetching tasks:", error);
+            }
+        }
+
+        // Load tasks on page load
+        fetchTasks();
+
+        // Add a new task
+        async function addTask() {
+            const taskInput = document.getElementById("task-input");
+            const taskName = taskInput.value.trim();
+
+            if (taskName === "") return;
+
+            try {
+                await fetch("http://localhost/vivaldiTrello/Todo-List_js_php/api.php", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ task_name: taskName })
+                });
+                taskInput.value = "";
+                fetchTasks(); // Refresh the list
+            } catch (error) {
+                console.error("Error adding task:", error);
+            }
+        }
+
+        // Toggle task completion
+        async function toggleComplete(taskId, isCompleted) {
+            try {
+                await fetch("http://localhost/vivaldiTrello/Todo-List_js_php/api.php", {
+                    method: "PUT",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ id: taskId, is_completed: isCompleted ? 0 : 1 })
+                });
+                fetchTasks();
+            } catch (error) {
+                console.error("Error updating task:", error);
+            }
+        }
+
+        // Delete a task
+        async function deleteTask(taskId) {
+            try {
+                await fetch("http://localhost/vivaldiTrello/Todo-List_js_php/api.php", {
+                    method: "DELETE",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ id: taskId })
+                });
+                fetchTasks();
+            } catch (error) {
+                console.error("Error deleting task:", error);
+            }
+        }
+    </script>
+</body>
+</html>

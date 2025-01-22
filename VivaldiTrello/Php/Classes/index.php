@@ -427,6 +427,28 @@ Ajoute __toString() pour retourner une chaîne formatée avec les détails de la
 Ajoute __call() pour gérer les appels à des méthodes inexistantes. -->
 
 
+<?php 
+
+class Car8 {
+
+    // Private properties
+    private $make;
+    private $model;
+    private $year;
+
+    // Constructor to initialize properties
+    public function __construct($make, $model, $year) {
+        $this->make = $make;
+        $this->model = $model;
+        $this->year = $year;
+    }
+
+    // Magic method __get() to access private properties
+    
+}
+
+?>
+
 
 <!-- 9️⃣ Exercice : Static Methods and Properties
 Objectif : Utiliser des propriétés et méthodes statiques.
