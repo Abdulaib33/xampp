@@ -444,8 +444,43 @@ class Car8 {
     }
 
     // Magic method __get() to access private properties
-    
+    public function __get($property) {
+        if (property_exists($this, $property)) {
+            return $this->$property;
+        } else {
+            return "Property '$property' does not exist.";
+        }
+    }
+
+    // Magic method __toString() to return a formatted string
+    public function __toString() {
+        return "Car Details: {$this->year} {$this->make} {$this->model}";
+    }
+
+    // Magic method __call() to handle calls to undefined methods
+    public function __call($method, $arguments) {
+        return "Method '$method' does not exist. Arguments:" . implode(', ', $arguments);
+    }
+
 }
+
+// Example usage
+$car8 = new Car8("Toyota", "Corolla", 2022);
+
+
+// Accessing private properties using __get()
+echo $car8->make . "\n"; // Output: Toyota
+echo $car8->model . "\n"; // Output: Corolla
+echo $car8->year . "\n"; // Output: 2022
+echo $car8->color . "\n"; // Output: Property 'color' does not exist.
+
+
+// Using __toString() to print the object
+echo $car8 . "\n"; // Output: Car Details: 2022 Toyota Corolla
+
+
+// Calling an undefined method using __call()
+echo $car8->startEngine("Key", "Ignition") . "\n"; // Output: Method 'startEngine' does not exist. Arguments: key, ignition
 
 ?>
 
@@ -459,6 +494,57 @@ Crée une méthode statique getNumberOfCars() pour accéder à cette propriété
 Teste en créant plusieurs objets et en vérifiant la valeur de numberOfCars. -->
 
 
+<?php 
+
+class Car {
+    // Static property to count the number of cars
+    private static $numberOfCars = 0;
+
+    // Private properties
+    private $make;
+    private $model;
+    private $year;
+
+    // Constructor to initialize properties and increment the car count
+    public function __construct($make, $model, $year) {
+        $this->make = $make;
+        $this->model = $model;
+        $this->year = $year;
+
+        // Increment the car count
+        self::$numberOfCars++;
+    }
+
+    // Static method to get the number of cars created
+    public static function getNumberOfCars() {
+        return self::$numberOfCars;
+    }
+
+    // Magic method __toString() to return a formatted string
+    public function __toString() {
+        return "Car Details: {$this->year} {$this->make} {$this->model}";
+    }
+}
+
+// Example usage
+echo "Number of cars created: " . Car::getNumberOfCars() . "\n"; // Output: Number of cars created: 0
+
+$car1 = new Car("Toyota", "Corolla", 2022);
+echo "Number of cars created: " . Car::getNumberOfCars() . "\n"; // Output: Number of cars created: 1
+
+$car2 = new Car("Honda", "Civic", 2021);
+echo "Number of cars created: " . Car::getNumberOfCars() . "\n"; // Output: Number of cars created: 2
+
+$car3 = new Car("Ford", "Mustang", 2020);
+echo "Number of cars created: " . Car::getNumberOfCars() . "\n"; // Output: Number of cars created: 3
+
+// Print details of the cars
+echo $car1 . "\n"; // Output: Car Details: 2022 Toyota Corolla
+echo $car2 . "\n"; // Output: Car Details: 2021 Honda Civic
+echo $car3 . "\n"; // Output: Car Details: 2020 Ford Mustang
+
+?>
+
 
 <!-- 🔟 Exercice : Design Patterns
 Objectif : Appliquer des patterns de conception orientée objet.
@@ -468,6 +554,97 @@ Singleton : Crée une classe Logger qui ne peut avoir qu’une seule instance. A
 Factory : Crée une classe CarFactory qui génère des instances de Car selon la marque et le modèle.
 Dependency Injection : Crée une classe CarService qui dépend d’une instance de Car. Utilise un constructeur pour injecter cette dépendance. -->
 
+
+<?php
+// Singleton Pattern: Logger Class
+class Logger {
+    // Hold the single instance of the class
+    private static $instance = null;
+
+    // Private constructor to prevent direct instantiation
+    private function __construct() {}
+
+    // Method to get the single instance of the class
+    public static function getInstance() {
+        if (self::$instance === null) {
+            self::$instance = new Logger();
+        }
+        return self::$instance;
+    }
+
+    // Method to log a message
+    public function log($message) {
+        echo "Log: $message\n";
+    }
+}
+
+// Example usage
+$logger = Logger::getInstance();
+$logger->log("This is a log message."); // Output: Log: This is a log message.
+
+// Attempting to create another instance will return the same instance
+$logger2 = Logger::getInstance();
+$logger2->log("Another log message."); // Output: Log: Another log message.
+
+// Check if both instances are the same
+var_dump($logger === $logger2); // Output: bool(true)
+?>
+
+
+
+<?php
+// Factory Pattern: CarFactory Class
+class Car10 {
+    private $make;
+    private $model;
+
+    public function __construct($make, $model) {
+        $this->make = $make;
+        $this->model = $model;
+    }
+
+    public function getDetails() {
+        return "Car: {$this->make} {$this->model}";
+    }
+}
+
+class CarFactory {
+    public static function createCar($make, $model) {
+        return new Car10($make, $model);
+    }
+}
+
+// Example usage
+$car1 = CarFactory::createCar("Toyota", "Corolla");
+echo $car1->getDetails() . "\n"; // Output: Car: Toyota Corolla
+
+$car2 = CarFactory::createCar("Honda", "Civic");
+echo $car2->getDetails() . "\n"; // Output: Car: Honda Civic
+?>
+
+
+
+<?php
+// Dependency Injection: CarService Class
+class CarService {
+    private $car;
+
+    // Inject the Car dependency via the constructor
+    public function __construct(Car10 $car) {
+        $this->car = $car;
+    }
+
+    // Method to perform a service action
+    public function service() {
+        echo "Servicing " . $this->car->getDetails() . "\n";
+    }
+}
+
+// Example usage
+$car = new Car10("Ford", "Mustang");
+$carService = new CarService($car);
+$carService->service(); // Output: Servicing Car: Ford Mustang
+?>
 
 
 <!-- Bonus : Mini-projet
