@@ -1,0 +1,1195 @@
+PS C:\xampp\htdocs> git init
+Initialized empty Git repository in C:/xampp/htdocs/.git/
+PS C:\xampp\htdocs> cd C:/xampp
+>>
+PS C:\xampp> git rm --cached -r apache/logs mysql/data htdocs/tmp
+>>
+fatal: pathspec 'htdocs/tmp' did not match any files
+PS C:\xampp> git status
+>>
+Refresh index: 100% (18338/18338), done.
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   apache/logs/access.log
+        modified:   apache/logs/error.log
+        modified:   apache/logs/httpd.pid
+        modified:   htdocs/VivaldiTrello (modified content, untracked content)
+        modified:   mysql/data/ib_logfile0
+        modified:   mysql/data/ibdata1
+        modified:   mysql/data/ibtmp1
+        modified:   mysql/data/mysql.pid
+        modified:   mysql/data/mysql/columns_priv.MAD
+        modified:   mysql/data/mysql/db.MAD
+        modified:   mysql/data/mysql/db.MAI
+        modified:   mysql/data/mysql_error.log
+        modified:   mysql/data/phpmyadmin/pma__userconfig.ibd
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        tmp/sess_nucbs3rhj42a43bcqcfu89pfg1
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\xampp> git add .
+>>
+PS C:\xampp> ^C
+PS C:\xampp> cd htdocs
+PS C:\xampp\htdocs> git add .
+>>
+warning: in the working copy of 'Laravel11API/bootstrap/app.php', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/0-DOM-JS/css/style.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/css/footer.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/css/header.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/css/style.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/.bin/detect-libc', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/.bin/detect-libc.ps1', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/.bin/sass', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/.bin/sass.ps1', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/.package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher-win32-x64/LICENSE', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher-win32-x64/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/LICENSE', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/binding.gyp', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/index.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/index.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/index.js.flow', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/scripts/build-from-source.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/Backend.cc', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/Backend.hh', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/Debounce.cc', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/Debounce.hh', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/DirTree.cc', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/DirTree.hh', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/Event.hh', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/Glob.cc', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/Glob.hh', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/PromiseRunner.hh', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/Signal.hh', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/Watcher.cc', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/Watcher.hh', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/binding.cc', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/kqueue/KqueueBackend.cc', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/kqueue/KqueueBackend.hh', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/linux/InotifyBackend.cc', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/linux/InotifyBackend.hh', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/macos/FSEventsBackend.cc', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/macos/FSEventsBackend.hh', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/shared/BruteForceBackend.cc', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/shared/BruteForceBackend.hh', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/unix/fts.cc', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/unix/legacy.cc', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/wasm/WasmBackend.cc', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/wasm/WasmBackend.hh', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/wasm/include.h', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/watchman/BSER.cc', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/watchman/BSER.hh', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/watchman/IPC.hh', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/watchman/WatchmanBackend.cc', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/watchman/WatchmanBackend.hh', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/windows/WindowsBackend.cc', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/windows/WindowsBackend.hh', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/windows/win_utils.cc', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/windows/win_utils.hh', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/wrapper.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/braces/LICENSE', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/braces/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/braces/index.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/braces/lib/compile.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/braces/lib/constants.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/braces/lib/expand.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/braces/lib/parse.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/braces/lib/stringify.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/braces/lib/utils.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/braces/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/chokidar/LICENSE', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/chokidar/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/chokidar/esm/handler.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/chokidar/esm/handler.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/chokidar/esm/index.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/chokidar/esm/index.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/chokidar/esm/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/chokidar/handler.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/chokidar/handler.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/chokidar/index.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/chokidar/index.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/chokidar/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/detect-libc/.npmignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/detect-libc/LICENSE', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/detect-libc/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/detect-libc/bin/detect-libc.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/detect-libc/lib/detect-libc.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/detect-libc/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/fill-range/LICENSE', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/fill-range/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/fill-range/index.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/fill-range/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/immutable/LICENSE', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/immutable/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/immutable/dist/immutable.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/immutable/dist/immutable.es.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/immutable/dist/immutable.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/immutable/dist/immutable.js.flow', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/immutable/dist/immutable.min.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/immutable/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/is-extglob/LICENSE', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/is-extglob/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/is-extglob/index.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/is-extglob/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/is-glob/LICENSE', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/is-glob/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/is-glob/index.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/is-glob/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/is-number/LICENSE', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/is-number/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/is-number/index.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/is-number/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/micromatch/LICENSE', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/micromatch/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/micromatch/index.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/micromatch/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/LICENSE.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/common.gypi', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/except.gypi', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/index.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/napi-inl.deprecated.h', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/napi-inl.h', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/napi.h', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/node_addon_api.gyp', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/node_api.gyp', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/noexcept.gypi', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/package-support.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/tools/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/tools/check-napi.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/tools/clang-format.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/tools/conversion.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/tools/eslint-format.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/picomatch/CHANGELOG.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/picomatch/LICENSE', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/picomatch/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/picomatch/index.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/picomatch/lib/constants.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/picomatch/lib/parse.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/picomatch/lib/picomatch.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/picomatch/lib/scan.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/picomatch/lib/utils.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/picomatch/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/readdirp/LICENSE', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/readdirp/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/readdirp/esm/index.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/readdirp/esm/index.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/readdirp/esm/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/readdirp/index.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/readdirp/index.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/readdirp/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/LICENSE', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/sass.dart.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/sass.default.cjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/sass.default.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/sass.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/sass.node.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/sass.node.mjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/compile.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/deprecations.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/exception.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/importer.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/index.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/legacy/exception.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/legacy/function.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/legacy/importer.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/legacy/options.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/legacy/plugin_this.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/legacy/render.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/logger/index.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/logger/source_location.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/logger/source_span.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/options.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/util/promise_or.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/value/argument_list.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/value/boolean.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/value/calculation.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/value/color.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/value/function.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/value/index.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/value/list.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/value/map.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/value/mixin.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/value/number.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/sass/types/value/string.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/source-map-js/LICENSE', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/source-map-js/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/array-set.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/base64-vlq.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/base64.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/binary-search.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/mapping-list.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/quick-sort.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/source-map-consumer.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/source-map-consumer.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/source-map-generator.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/source-map-generator.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/source-node.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/source-node.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/util.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/source-map-js/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/source-map-js/source-map.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/source-map-js/source-map.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/to-regex-range/LICENSE', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/to-regex-range/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/to-regex-range/index.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/node_modules/to-regex-range/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Nouveau dossier/introduction-poo-js/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: adding embedded git repository: VivaldiTrello
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> VivaldiTrello
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached VivaldiTrello
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config advice.addEmbeddedRepo false"
+warning: in the working copy of 'applications.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'bitnami.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/404.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/de/faq.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/de/howto.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/de/howto_platform_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/de/howto_shared_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/de/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/access-phpmyadmin-remotely.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/access-phpmyadmin-remotely.pdfmarks', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/activate-use-xdebug.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/activate-use-xdebug.pdfmarks', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/auto-start-xampp.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/auto-start-xampp.pdfmarks', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/backup-restore-mysql.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/backup-restore-mysql.pdfmarks', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/change-mysql-temp-dir.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/change-mysql-temp-dir.pdf', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/change-mysql-temp-dir.pdfmarks', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/configure-use-tomcat.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/configure-use-tomcat.pdfmarks', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/configure-vhosts.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/configure-vhosts.pdfmarks', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/configure-wildcard-subdomains.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/configure-wildcard-subdomains.pdfmarks', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/create-framework-project-zf1.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/create-framework-project-zf1.pdfmarks', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/create-framework-project-zf2.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/create-framework-project-zf2.pdfmarks', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/deploy-git-app.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/deploy-git-app.pdfmarks', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/increase-php-file-upload-limit.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/increase-php-file-upload-limit.pdf', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/increase-php-file-upload-limit.pdfmarks', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/reset-mysql-password.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/reset-mysql-password.pdfmarks', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/send-mail.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/send-mail.pdfmarks', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/transfer-files-ftp.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/transfer-files-ftp.pdfmarks', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/troubleshoot-apache.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/troubleshoot-apache.pdfmarks', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/use-different-php-version.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/use-different-php-version.pdfmarks', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/use-php-fcgi.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/use-php-fcgi.pdfmarks', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/use-sqlite.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/docs/use-sqlite.pdfmarks', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/es/faq.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/es/howto.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/es/howto_platform_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/es/howto_shared_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/es/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/faq.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/fr/faq.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/fr/howto.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/fr/howto_platform_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/fr/howto_shared_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/fr/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/howto.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/howto_platform_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/howto_shared_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/hu/faq.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/hu/howto.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/hu/howto_platform_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/hu/howto_shared_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/hu/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/it/faq.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/it/howto.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/it/howto_platform_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/it/howto_shared_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/it/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/javascripts/all.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/javascripts/modernizr.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/jp/faq.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/jp/howto.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/jp/howto_platform_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/jp/howto_shared_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/jp/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/phpinfo.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/pl/faq.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/pl/howto.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/pl/howto_platform_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/pl/howto_shared_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/pl/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/pt_br/faq.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/pt_br/howto.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/pt_br/howto_platform_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/pt_br/howto_shared_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/pt_br/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/ro/faq.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/ro/howto.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/ro/howto_platform_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/ro/howto_shared_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/ro/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/ru/faq.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/ru/howto.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/ru/howto_platform_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/ru/howto_shared_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/ru/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/stylesheets/all-rtl.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/stylesheets/all.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/stylesheets/asciidoctor.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/stylesheets/normalize.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/tr/faq.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/tr/howto.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/tr/howto_platform_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/tr/howto_shared_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/tr/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/ur/faq.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/ur/howto.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/ur/howto_platform_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/ur/howto_shared_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/ur/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/zh_cn/faq.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/zh_cn/howto.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/zh_cn/howto_platform_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/zh_cn/howto_shared_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/zh_cn/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/zh_tw/faq.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/zh_tw/howto.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/zh_tw/howto_platform_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/zh_tw/howto_shared_links.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'dashboard/zh_tw/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'index.php', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'xampp/.version', LF will be replaced by CRLF the next time Git touches it
+PS C:\xampp\htdocs> git commit -m "Initial commit with htdocs files"
+>>
+[master (root-commit) 163825f] Initial commit with htdocs files
+ 794 files changed, 309284 insertions(+)
+ create mode 100644 .gitattributes
+ create mode 100644 .gitignore
+ create mode 100644 Coding Brio/css.css
+ create mode 100644 Coding Brio/index.html
+ create mode 100644 Coding Brio/js.js
+ create mode 100644 Laravel11API/.editorconfig
+ create mode 100644 Laravel11API/.env.example
+ create mode 100644 Laravel11API/.gitattributes
+ create mode 100644 Laravel11API/.gitignore
+ create mode 100644 Laravel11API/README.md
+ create mode 100644 Laravel11API/app/Http/Controllers/Controller.php
+ create mode 100644 Laravel11API/app/Http/Controllers/PostController.php
+ create mode 100644 Laravel11API/app/Models/Post.php
+ create mode 100644 Laravel11API/app/Models/User.php
+ create mode 100644 Laravel11API/app/Policies/PostPolicy.php
+ create mode 100644 Laravel11API/app/Providers/AppServiceProvider.php
+ create mode 100644 Laravel11API/artisan
+ create mode 100644 Laravel11API/bootstrap/app.php
+ create mode 100644 Laravel11API/bootstrap/cache/.gitignore
+ create mode 100644 Laravel11API/bootstrap/providers.php
+ create mode 100644 Laravel11API/composer.json
+ create mode 100644 Laravel11API/composer.lock
+ create mode 100644 Laravel11API/config/app.php
+ create mode 100644 Laravel11API/config/auth.php
+ create mode 100644 Laravel11API/config/cache.php
+ create mode 100644 Laravel11API/config/database.php
+ create mode 100644 Laravel11API/config/filesystems.php
+ create mode 100644 Laravel11API/config/logging.php
+ create mode 100644 Laravel11API/config/mail.php
+ create mode 100644 Laravel11API/config/queue.php
+ create mode 100644 Laravel11API/config/sanctum.php
+ create mode 100644 Laravel11API/config/services.php
+ create mode 100644 Laravel11API/config/session.php
+ create mode 100644 Laravel11API/database/.gitignore
+ create mode 100644 Laravel11API/database/factories/PostFactory.php
+ create mode 100644 Laravel11API/database/factories/UserFactory.php
+ create mode 100644 Laravel11API/database/migrations/0001_01_01_000000_create_users_table.php
+ create mode 100644 Laravel11API/database/migrations/0001_01_01_000001_create_cache_table.php
+ create mode 100644 Laravel11API/database/migrations/0001_01_01_000002_create_jobs_table.php
+ create mode 100644 Laravel11API/database/migrations/2024_10_19_170537_create_personal_access_tokens_table.php
+ create mode 100644 Laravel11API/database/migrations/2024_10_20_125625_create_posts_table.php
+ create mode 100644 Laravel11API/database/seeders/DatabaseSeeder.php
+ create mode 100644 Laravel11API/database/seeders/PostSeeder.php
+ create mode 100644 Laravel11API/package-lock.json
+ create mode 100644 Laravel11API/package.json
+ create mode 100644 Laravel11API/phpunit.xml
+ create mode 100644 Laravel11API/postcss.config.js
+ create mode 100644 Laravel11API/public/.htaccess
+ create mode 100644 Laravel11API/public/favicon.ico
+ create mode 100644 Laravel11API/public/index.php
+ create mode 100644 Laravel11API/public/robots.txt
+ create mode 100644 Laravel11API/resources/css/app.css
+ create mode 100644 Laravel11API/resources/js/app.js
+ create mode 100644 Laravel11API/resources/js/bootstrap.js
+ create mode 100644 Laravel11API/resources/views/welcome.blade.php
+ create mode 100644 Laravel11API/routes/api.php
+ create mode 100644 Laravel11API/routes/console.php
+ create mode 100644 Laravel11API/routes/web.php
+ create mode 100644 Laravel11API/storage/app/.gitignore
+ create mode 100644 Laravel11API/storage/app/private/.gitignore
+ create mode 100644 Laravel11API/storage/app/public/.gitignore
+ create mode 100644 Laravel11API/storage/framework/.gitignore
+ create mode 100644 Laravel11API/storage/framework/cache/.gitignore
+ create mode 100644 Laravel11API/storage/framework/cache/data/.gitignore
+ create mode 100644 Laravel11API/storage/framework/sessions/.gitignore
+ create mode 100644 Laravel11API/storage/framework/testing/.gitignore
+ create mode 100644 Laravel11API/storage/framework/views/.gitignore
+ create mode 100644 Laravel11API/storage/logs/.gitignore
+ create mode 100644 Laravel11API/tailwind.config.js
+ create mode 100644 Laravel11API/tests/Feature/ExampleTest.php
+ create mode 100644 Laravel11API/tests/TestCase.php
+ create mode 100644 Laravel11API/tests/Unit/ExampleTest.php
+ create mode 100644 Laravel11API/vite.config.js
+ create mode 100644 Laravel11CrashCourse/.editorconfig
+ create mode 100644 Laravel11CrashCourse/.env.example
+ create mode 100644 Laravel11CrashCourse/.gitattributes
+ create mode 100644 Laravel11CrashCourse/.gitignore
+ create mode 100644 Laravel11CrashCourse/README.md
+ create mode 100644 Laravel11CrashCourse/app/Http/Controllers/Controller.php
+ create mode 100644 Laravel11CrashCourse/app/Models/User.php
+ create mode 100644 Laravel11CrashCourse/app/Providers/AppServiceProvider.php
+ create mode 100644 Laravel11CrashCourse/artisan
+ create mode 100644 Laravel11CrashCourse/bootstrap/app.php
+ create mode 100644 Laravel11CrashCourse/bootstrap/cache/.gitignore
+ create mode 100644 Laravel11CrashCourse/bootstrap/providers.php
+ create mode 100644 Laravel11CrashCourse/composer.json
+ create mode 100644 Laravel11CrashCourse/composer.lock
+ create mode 100644 Laravel11CrashCourse/config/app.php
+ create mode 100644 Laravel11CrashCourse/config/auth.php
+ create mode 100644 Laravel11CrashCourse/config/cache.php
+ create mode 100644 Laravel11CrashCourse/config/database.php
+ create mode 100644 Laravel11CrashCourse/config/filesystems.php
+ create mode 100644 Laravel11CrashCourse/config/logging.php
+ create mode 100644 Laravel11CrashCourse/config/mail.php
+ create mode 100644 Laravel11CrashCourse/config/queue.php
+ create mode 100644 Laravel11CrashCourse/config/services.php
+ create mode 100644 Laravel11CrashCourse/config/session.php
+ create mode 100644 Laravel11CrashCourse/database/.gitignore
+ create mode 100644 Laravel11CrashCourse/database/factories/UserFactory.php
+ create mode 100644 Laravel11CrashCourse/database/migrations/0001_01_01_000000_create_users_table.php
+ create mode 100644 Laravel11CrashCourse/database/migrations/0001_01_01_000001_create_cache_table.php
+ create mode 100644 Laravel11CrashCourse/database/migrations/0001_01_01_000002_create_jobs_table.php
+ create mode 100644 Laravel11CrashCourse/database/seeders/DatabaseSeeder.php
+ create mode 100644 Laravel11CrashCourse/package-lock.json
+ create mode 100644 Laravel11CrashCourse/package.json
+ create mode 100644 Laravel11CrashCourse/phpunit.xml
+ create mode 100644 Laravel11CrashCourse/postcss.config.js
+ create mode 100644 Laravel11CrashCourse/public/.htaccess
+ create mode 100644 Laravel11CrashCourse/public/favicon.ico
+ create mode 100644 Laravel11CrashCourse/public/index.php
+ create mode 100644 Laravel11CrashCourse/public/robots.txt
+ create mode 100644 Laravel11CrashCourse/resources/css/app.css
+ create mode 100644 Laravel11CrashCourse/resources/js/app.js
+ create mode 100644 Laravel11CrashCourse/resources/js/bootstrap.js
+ create mode 100644 Laravel11CrashCourse/resources/views/welcome.blade.php
+ create mode 100644 Laravel11CrashCourse/routes/console.php
+ create mode 100644 Laravel11CrashCourse/routes/web.php
+ create mode 100644 Laravel11CrashCourse/storage/app/.gitignore
+ create mode 100644 Laravel11CrashCourse/storage/app/private/.gitignore
+ create mode 100644 Laravel11CrashCourse/storage/app/public/.gitignore
+ create mode 100644 Laravel11CrashCourse/storage/framework/.gitignore
+ create mode 100644 Laravel11CrashCourse/storage/framework/cache/.gitignore
+ create mode 100644 Laravel11CrashCourse/storage/framework/cache/data/.gitignore
+ create mode 100644 Laravel11CrashCourse/storage/framework/sessions/.gitignore
+ create mode 100644 Laravel11CrashCourse/storage/framework/testing/.gitignore
+ create mode 100644 Laravel11CrashCourse/storage/framework/views/.gitignore
+ create mode 100644 Laravel11CrashCourse/storage/logs/.gitignore
+ create mode 100644 Laravel11CrashCourse/tailwind.config.js
+ create mode 100644 Laravel11CrashCourse/tests/Feature/ExampleTest.php
+ create mode 100644 Laravel11CrashCourse/tests/Pest.php
+ create mode 100644 Laravel11CrashCourse/tests/TestCase.php
+ create mode 100644 Laravel11CrashCourse/tests/Unit/ExampleTest.php
+ create mode 100644 Laravel11CrashCourse/vite.config.js
+ create mode 100644 LaravelTodoListMattSocha/.editorconfig
+ create mode 100644 LaravelTodoListMattSocha/.env.example
+ create mode 100644 LaravelTodoListMattSocha/.gitattributes
+ create mode 100644 LaravelTodoListMattSocha/.gitignore
+ create mode 100644 LaravelTodoListMattSocha/README.md
+ create mode 100644 LaravelTodoListMattSocha/app/Http/Controllers/Controller.php
+ create mode 100644 LaravelTodoListMattSocha/app/Http/Controllers/TodoListController.php
+ create mode 100644 LaravelTodoListMattSocha/app/Models/ListItem.php
+ create mode 100644 LaravelTodoListMattSocha/app/Models/User.php
+ create mode 100644 LaravelTodoListMattSocha/app/Providers/AppServiceProvider.php
+ create mode 100644 LaravelTodoListMattSocha/artisan
+ create mode 100644 LaravelTodoListMattSocha/bootstrap/app.php
+ create mode 100644 LaravelTodoListMattSocha/bootstrap/cache/.gitignore
+ create mode 100644 LaravelTodoListMattSocha/bootstrap/providers.php
+ create mode 100644 LaravelTodoListMattSocha/composer.json
+ create mode 100644 LaravelTodoListMattSocha/composer.lock
+ create mode 100644 LaravelTodoListMattSocha/config/app.php
+ create mode 100644 LaravelTodoListMattSocha/config/auth.php
+ create mode 100644 LaravelTodoListMattSocha/config/cache.php
+ create mode 100644 LaravelTodoListMattSocha/config/database.php
+ create mode 100644 LaravelTodoListMattSocha/config/filesystems.php
+ create mode 100644 LaravelTodoListMattSocha/config/logging.php
+ create mode 100644 LaravelTodoListMattSocha/config/mail.php
+ create mode 100644 LaravelTodoListMattSocha/config/queue.php
+ create mode 100644 LaravelTodoListMattSocha/config/services.php
+ create mode 100644 LaravelTodoListMattSocha/config/session.php
+ create mode 100644 LaravelTodoListMattSocha/database/.gitignore
+ create mode 100644 LaravelTodoListMattSocha/database/factories/UserFactory.php
+ create mode 100644 LaravelTodoListMattSocha/database/migrations/2024_10_22_113746_create_list_items_table.php
+ create mode 100644 LaravelTodoListMattSocha/database/seeders/DatabaseSeeder.php
+ create mode 100644 LaravelTodoListMattSocha/package-lock.json
+ create mode 100644 LaravelTodoListMattSocha/package.json
+ create mode 100644 LaravelTodoListMattSocha/phpunit.xml
+ create mode 100644 LaravelTodoListMattSocha/postcss.config.js
+ create mode 100644 LaravelTodoListMattSocha/public/.htaccess
+ create mode 100644 LaravelTodoListMattSocha/public/favicon.ico
+ create mode 100644 LaravelTodoListMattSocha/public/index.php
+ create mode 100644 LaravelTodoListMattSocha/public/robots.txt
+ create mode 100644 LaravelTodoListMattSocha/resources/css/app.css
+ create mode 100644 LaravelTodoListMattSocha/resources/js/app.js
+ create mode 100644 LaravelTodoListMattSocha/resources/js/bootstrap.js
+ create mode 100644 LaravelTodoListMattSocha/resources/views/welcome.blade.php
+ create mode 100644 LaravelTodoListMattSocha/routes/console.php
+ create mode 100644 LaravelTodoListMattSocha/routes/web.php
+ create mode 100644 LaravelTodoListMattSocha/storage/app/.gitignore
+ create mode 100644 LaravelTodoListMattSocha/storage/app/private/.gitignore
+ create mode 100644 LaravelTodoListMattSocha/storage/app/public/.gitignore
+ create mode 100644 LaravelTodoListMattSocha/storage/framework/.gitignore
+ create mode 100644 LaravelTodoListMattSocha/storage/framework/cache/.gitignore
+ create mode 100644 LaravelTodoListMattSocha/storage/framework/cache/data/.gitignore
+ create mode 100644 LaravelTodoListMattSocha/storage/framework/sessions/.gitignore
+ create mode 100644 LaravelTodoListMattSocha/storage/framework/testing/.gitignore
+ create mode 100644 LaravelTodoListMattSocha/storage/framework/views/.gitignore
+ create mode 100644 LaravelTodoListMattSocha/storage/logs/.gitignore
+ create mode 100644 LaravelTodoListMattSocha/tailwind.config.js
+ create mode 100644 LaravelTodoListMattSocha/tests/Feature/ExampleTest.php
+ create mode 100644 LaravelTodoListMattSocha/tests/TestCase.php
+ create mode 100644 LaravelTodoListMattSocha/tests/Unit/ExampleTest.php
+ create mode 100644 LaravelTodoListMattSocha/vite.config.js
+ create mode 100644 Nouveau dossier/0-DOM-JS/Exercise/Exercise1TodoList.html
+ create mode 100644 Nouveau dossier/0-DOM-JS/TO-DO-LIST.html
+ create mode 100644 Nouveau dossier/0-DOM-JS/TO-DO-LIST.js
+ create mode 100644 Nouveau dossier/0-DOM-JS/correction/TO-DO-LIST-correction.html
+ create mode 100644 Nouveau dossier/0-DOM-JS/correction/TO-DO-LIST-correction.js
+ create mode 100644 Nouveau dossier/0-DOM-JS/correction/style-correction.css
+ create mode 100644 Nouveau dossier/0-DOM-JS/css/style.css
+ create mode 100644 Nouveau dossier/0-DOM-JS/css/style.css.map
+ create mode 100644 Nouveau dossier/0-DOM-JS/scss/style.scss
+ create mode 100644 Nouveau dossier/introduction-poo-js/css/footer.css
+ create mode 100644 Nouveau dossier/introduction-poo-js/css/footer.css.map
+ create mode 100644 Nouveau dossier/introduction-poo-js/css/header.css
+ create mode 100644 Nouveau dossier/introduction-poo-js/css/header.css.map
+ create mode 100644 Nouveau dossier/introduction-poo-js/css/style.css
+ create mode 100644 Nouveau dossier/introduction-poo-js/css/style.css.map
+ create mode 100644 Nouveau dossier/introduction-poo-js/index.html
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/.bin/detect-libc
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/.bin/detect-libc.cmd
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/.bin/detect-libc.ps1
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/.bin/sass
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/.bin/sass.cmd
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/.bin/sass.ps1
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/.package-lock.json
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher-win32-x64/LICENSE
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher-win32-x64/README.md
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher-win32-x64/package.json
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher-win32-x64/watcher.node
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/LICENSE
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/README.md
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/binding.gyp
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/index.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/index.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/index.js.flow
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/package.json
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/scripts/build-from-source.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/Backend.cc
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/Backend.hh
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/Debounce.cc
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/Debounce.hh
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/DirTree.cc
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/DirTree.hh
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/Event.hh
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/Glob.cc
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/Glob.hh
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/PromiseRunner.hh
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/Signal.hh
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/Watcher.cc
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/Watcher.hh
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/binding.cc
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/kqueue/KqueueBackend.cc
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/kqueue/KqueueBackend.hh
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/linux/InotifyBackend.cc
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/linux/InotifyBackend.hh
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/macos/FSEventsBackend.cc
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/macos/FSEventsBackend.hh
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/shared/BruteForceBackend.cc
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/shared/BruteForceBackend.hh
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/unix/fts.cc
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/unix/legacy.cc
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/wasm/WasmBackend.cc
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/wasm/WasmBackend.hh
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/wasm/include.h
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/watchman/BSER.cc
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/watchman/BSER.hh
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/watchman/IPC.hh
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/watchman/WatchmanBackend.cc
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/watchman/WatchmanBackend.hh
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/windows/WindowsBackend.cc
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/windows/WindowsBackend.hh
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/windows/win_utils.cc
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/src/windows/win_utils.hh
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/@parcel/watcher/wrapper.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/braces/LICENSE
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/braces/README.md
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/braces/index.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/braces/lib/compile.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/braces/lib/constants.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/braces/lib/expand.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/braces/lib/parse.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/braces/lib/stringify.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/braces/lib/utils.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/braces/package.json
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/chokidar/LICENSE
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/chokidar/README.md
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/chokidar/esm/handler.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/chokidar/esm/handler.d.ts.map
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/chokidar/esm/handler.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/chokidar/esm/handler.js.map
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/chokidar/esm/index.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/chokidar/esm/index.d.ts.map
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/chokidar/esm/index.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/chokidar/esm/index.js.map
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/chokidar/esm/package.json
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/chokidar/handler.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/chokidar/handler.d.ts.map
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/chokidar/handler.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/chokidar/handler.js.map
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/chokidar/index.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/chokidar/index.d.ts.map
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/chokidar/index.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/chokidar/index.js.map
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/chokidar/package.json
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/detect-libc/.npmignore
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/detect-libc/LICENSE
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/detect-libc/README.md
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/detect-libc/bin/detect-libc.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/detect-libc/lib/detect-libc.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/detect-libc/package.json
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/fill-range/LICENSE
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/fill-range/README.md
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/fill-range/index.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/fill-range/package.json
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/immutable/LICENSE
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/immutable/README.md
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/immutable/dist/immutable.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/immutable/dist/immutable.es.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/immutable/dist/immutable.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/immutable/dist/immutable.js.flow
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/immutable/dist/immutable.min.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/immutable/package.json
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/is-extglob/LICENSE
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/is-extglob/README.md
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/is-extglob/index.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/is-extglob/package.json
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/is-glob/LICENSE
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/is-glob/README.md
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/is-glob/index.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/is-glob/package.json
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/is-number/LICENSE
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/is-number/README.md
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/is-number/index.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/is-number/package.json
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/micromatch/LICENSE
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/micromatch/README.md
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/micromatch/index.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/micromatch/package.json
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/LICENSE.md
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/README.md
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/common.gypi
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/except.gypi
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/index.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/napi-inl.deprecated.h
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/napi-inl.h
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/napi.h
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/node_addon_api.gyp
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/node_api.gyp
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/noexcept.gypi
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/nothing.c
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/package-support.json
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/package.json
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/tools/README.md
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/tools/check-napi.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/tools/clang-format.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/tools/conversion.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/node-addon-api/tools/eslint-format.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/picomatch/CHANGELOG.md
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/picomatch/LICENSE
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/picomatch/README.md
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/picomatch/index.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/picomatch/lib/constants.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/picomatch/lib/parse.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/picomatch/lib/picomatch.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/picomatch/lib/scan.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/picomatch/lib/utils.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/picomatch/package.json
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/readdirp/LICENSE
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/readdirp/README.md
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/readdirp/esm/index.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/readdirp/esm/index.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/readdirp/esm/package.json
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/readdirp/index.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/readdirp/index.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/readdirp/package.json
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/LICENSE
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/README.md
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/package.json
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/sass.dart.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/sass.default.cjs
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/sass.default.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/sass.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/sass.node.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/sass.node.mjs
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/compile.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/deprecations.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/exception.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/importer.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/index.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/legacy/exception.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/legacy/function.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/legacy/importer.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/legacy/options.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/legacy/plugin_this.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/legacy/render.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/logger/index.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/logger/source_location.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/logger/source_span.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/options.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/util/promise_or.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/value/argument_list.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/value/boolean.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/value/calculation.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/value/color.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/value/function.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/value/index.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/value/list.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/value/map.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/value/mixin.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/value/number.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/sass/types/value/string.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/source-map-js/LICENSE
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/source-map-js/README.md
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/array-set.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/base64-vlq.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/base64.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/binary-search.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/mapping-list.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/quick-sort.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/source-map-consumer.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/source-map-consumer.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/source-map-generator.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/source-map-generator.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/source-node.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/source-node.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/source-map-js/lib/util.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/source-map-js/package.json
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/source-map-js/source-map.d.ts
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/source-map-js/source-map.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/to-regex-range/LICENSE
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/to-regex-range/README.md
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/to-regex-range/index.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/node_modules/to-regex-range/package.json
+ create mode 100644 Nouveau dossier/introduction-poo-js/package-lock.json
+ create mode 100644 Nouveau dossier/introduction-poo-js/package.json
+ create mode 100644 Nouveau dossier/introduction-poo-js/script.js
+ create mode 100644 Nouveau dossier/introduction-poo-js/scss/footer.scss
+ create mode 100644 Nouveau dossier/introduction-poo-js/scss/header.scss
+ create mode 100644 Nouveau dossier/introduction-poo-js/scss/style.scss
+ create mode 100644 Steves Teachers/Lua Programming Tutorials/forstudioloopsluau.lua
+ create mode 100644 Steves Teachers/Lua Programming Tutorials/lancer-script.bat
+ create mode 100644 Steves Teachers/Lua Programming Tutorials/test.lua
+ create mode 160000 VivaldiTrello
+ create mode 100644 Web Tech Knowledge/PHP Login & Register System Tutorial For Noobs/home.php
+ create mode 100644 Web Tech Knowledge/PHP Login & Register System Tutorial For Noobs/login.php
+ create mode 100644 Web Tech Knowledge/PHP Login & Register System Tutorial For Noobs/logout.php
+ create mode 100644 Web Tech Knowledge/PHP Login & Register System Tutorial For Noobs/register.php
+ create mode 100644 applications.html
+ create mode 100644 bitnami.css
+ create mode 100644 codepoint/ReactOffline/JavaScript/0-fundamentals.html
+ create mode 100644 codepoint/ReactOffline/JavaScript/1-Operators.html
+ create mode 100644 codepoint/ReactOffline/JavaScript/10-Network Request.html
+ create mode 100644 codepoint/ReactOffline/JavaScript/11-JavaScript Runtime.html
+ create mode 100644 codepoint/ReactOffline/JavaScript/2-program flow.html
+ create mode 100644 codepoint/ReactOffline/JavaScript/3-strings.html
+ create mode 100644 codepoint/ReactOffline/JavaScript/4-Arrays.html
+ create mode 100644 codepoint/ReactOffline/JavaScript/5-function.html
+ create mode 100644 codepoint/ReactOffline/JavaScript/6-Object &  prototypes.html
+ create mode 100644 codepoint/ReactOffline/JavaScript/7-Advanced Function.html
+ create mode 100644 codepoint/ReactOffline/JavaScript/8-Error handling.html
+ create mode 100644 codepoint/ReactOffline/JavaScript/9-Regular Expression.html
+ create mode 100644 dashboard/404.html
+ create mode 100644 dashboard/de/faq.html
+ create mode 100644 dashboard/de/howto.html
+ create mode 100644 dashboard/de/howto_platform_links.html
+ create mode 100644 dashboard/de/howto_shared_links.html
+ create mode 100644 dashboard/de/index.html
+ create mode 100644 dashboard/docs/access-phpmyadmin-remotely.html
+ create mode 100644 dashboard/docs/access-phpmyadmin-remotely.pdf
+ create mode 100644 dashboard/docs/access-phpmyadmin-remotely.pdfmarks
+ create mode 100644 dashboard/docs/activate-use-xdebug.html
+ create mode 100644 dashboard/docs/activate-use-xdebug.pdf
+ create mode 100644 dashboard/docs/activate-use-xdebug.pdfmarks
+ create mode 100644 dashboard/docs/auto-start-xampp.html
+ create mode 100644 dashboard/docs/auto-start-xampp.pdf
+ create mode 100644 dashboard/docs/auto-start-xampp.pdfmarks
+ create mode 100644 dashboard/docs/backup-restore-mysql.html
+ create mode 100644 dashboard/docs/backup-restore-mysql.pdf
+ create mode 100644 dashboard/docs/backup-restore-mysql.pdfmarks
+ create mode 100644 dashboard/docs/change-mysql-temp-dir.html
+ create mode 100644 dashboard/docs/change-mysql-temp-dir.pdf
+ create mode 100644 dashboard/docs/change-mysql-temp-dir.pdfmarks
+ create mode 100644 dashboard/docs/configure-use-tomcat.html
+ create mode 100644 dashboard/docs/configure-use-tomcat.pdf
+ create mode 100644 dashboard/docs/configure-use-tomcat.pdfmarks
+ create mode 100644 dashboard/docs/configure-vhosts.html
+ create mode 100644 dashboard/docs/configure-vhosts.pdf
+ create mode 100644 dashboard/docs/configure-vhosts.pdfmarks
+ create mode 100644 dashboard/docs/configure-wildcard-subdomains.html
+ create mode 100644 dashboard/docs/configure-wildcard-subdomains.pdf
+ create mode 100644 dashboard/docs/configure-wildcard-subdomains.pdfmarks
+ create mode 100644 dashboard/docs/create-framework-project-zf1.html
+ create mode 100644 dashboard/docs/create-framework-project-zf1.pdf
+ create mode 100644 dashboard/docs/create-framework-project-zf1.pdfmarks
+ create mode 100644 dashboard/docs/create-framework-project-zf2.html
+ create mode 100644 dashboard/docs/create-framework-project-zf2.pdf
+ create mode 100644 dashboard/docs/create-framework-project-zf2.pdfmarks
+ create mode 100644 dashboard/docs/deploy-git-app.html
+ create mode 100644 dashboard/docs/deploy-git-app.pdf
+ create mode 100644 dashboard/docs/deploy-git-app.pdfmarks
+ create mode 100644 dashboard/docs/images/access-phpmyadmin-remotely/image1.png
+ create mode 100644 dashboard/docs/images/activate-use-xdebug/image1.png
+ create mode 100644 dashboard/docs/images/activate-use-xdebug/image2.png
+ create mode 100644 dashboard/docs/images/activate-use-xdebug/image3.png
+ create mode 100644 dashboard/docs/images/auto-start-xampp/image1.png
+ create mode 100644 dashboard/docs/images/backup-restore-mysql/image1.png
+ create mode 100644 dashboard/docs/images/backup-restore-mysql/image10.png
+ create mode 100644 dashboard/docs/images/backup-restore-mysql/image11.png
+ create mode 100644 dashboard/docs/images/backup-restore-mysql/image12.png
+ create mode 100644 dashboard/docs/images/backup-restore-mysql/image13.png
+ create mode 100644 dashboard/docs/images/backup-restore-mysql/image14.png
+ create mode 100644 dashboard/docs/images/backup-restore-mysql/image2.png
+ create mode 100644 dashboard/docs/images/backup-restore-mysql/image3.png
+ create mode 100644 dashboard/docs/images/backup-restore-mysql/image4.png
+ create mode 100644 dashboard/docs/images/backup-restore-mysql/image5.png
+ create mode 100644 dashboard/docs/images/backup-restore-mysql/image6.png
+ create mode 100644 dashboard/docs/images/backup-restore-mysql/image7.png
+ create mode 100644 dashboard/docs/images/backup-restore-mysql/image8.png
+ create mode 100644 dashboard/docs/images/backup-restore-mysql/image9.png
+ create mode 100644 dashboard/docs/images/configure-use-tomcat/image1.png
+ create mode 100644 dashboard/docs/images/configure-use-tomcat/image2.png
+ create mode 100644 dashboard/docs/images/configure-use-tomcat/image3.png
+ create mode 100644 dashboard/docs/images/configure-use-tomcat/image4.png
+ create mode 100644 dashboard/docs/images/configure-use-tomcat/image5.png
+ create mode 100644 dashboard/docs/images/configure-use-tomcat/image6.png
+ create mode 100644 dashboard/docs/images/configure-use-tomcat/image7.png
+ create mode 100644 dashboard/docs/images/configure-vhosts/image1.png
+ create mode 100644 dashboard/docs/images/configure-vhosts/image2.png
+ create mode 100644 dashboard/docs/images/configure-vhosts/image3.png
+ create mode 100644 dashboard/docs/images/configure-vhosts/image4.png
+ create mode 100644 dashboard/docs/images/configure-wildcard-subdomains/image1.png
+ create mode 100644 dashboard/docs/images/configure-wildcard-subdomains/image2.png
+ create mode 100644 dashboard/docs/images/configure-wildcard-subdomains/image3.png
+ create mode 100644 dashboard/docs/images/configure-wildcard-subdomains/image4.png
+ create mode 100644 dashboard/docs/images/create-framework-project-zf1/image1.png
+ create mode 100644 dashboard/docs/images/create-framework-project-zf1/image2.png
+ create mode 100644 dashboard/docs/images/create-framework-project-zf2/image1.png
+ create mode 100644 dashboard/docs/images/create-framework-project-zf2/image2.png
+ create mode 100644 dashboard/docs/images/create-framework-project-zf2/image3.png
+ create mode 100644 dashboard/docs/images/create-framework-project-zf2/image4.png
+ create mode 100644 dashboard/docs/images/create-framework-project-zf2/image5.png
+ create mode 100644 dashboard/docs/images/deploy-git-app/image1.png
+ create mode 100644 dashboard/docs/images/deploy-git-app/image2.png
+ create mode 100644 dashboard/docs/images/deploy-git-app/image3.png
+ create mode 100644 dashboard/docs/images/deploy-git-app/image4.png
+ create mode 100644 dashboard/docs/images/deploy-git-app/image5.png
+ create mode 100644 dashboard/docs/images/deploy-git-app/image6.png
+ create mode 100644 dashboard/docs/images/install-wordpress/image01.png
+ create mode 100644 dashboard/docs/images/install-wordpress/image02.png
+ create mode 100644 dashboard/docs/images/install-wordpress/image11.png
+ create mode 100644 dashboard/docs/images/install-wordpress/image110.png
+ create mode 100644 dashboard/docs/images/install-wordpress/image12.png
+ create mode 100644 dashboard/docs/images/install-wordpress/image13.png
+ create mode 100644 dashboard/docs/images/install-wordpress/image14.png
+ create mode 100644 dashboard/docs/images/install-wordpress/image15.png
+ create mode 100644 dashboard/docs/images/install-wordpress/image16.png
+ create mode 100644 dashboard/docs/images/install-wordpress/image17.png
+ create mode 100644 dashboard/docs/images/install-wordpress/image18.png
+ create mode 100644 dashboard/docs/images/install-wordpress/image19.png
+ create mode 100644 dashboard/docs/images/install-wordpress/image21.png
+ create mode 100644 dashboard/docs/images/install-wordpress/image22.png
+ create mode 100644 dashboard/docs/images/install-wordpress/image23.png
+ create mode 100644 dashboard/docs/images/install-wordpress/image24.png
+ create mode 100644 dashboard/docs/images/install-wordpress/image31.png
+ create mode 100644 dashboard/docs/images/install-wordpress/image32.png
+ create mode 100644 dashboard/docs/images/install-wordpress/image33.png
+ create mode 100644 dashboard/docs/images/install-wordpress/image34.png
+ create mode 100644 dashboard/docs/images/install-wordpress/image35.png
+ create mode 100644 dashboard/docs/images/install-wordpress/image36.png
+ create mode 100644 dashboard/docs/images/install-wordpress/image37.png
+ create mode 100644 dashboard/docs/images/install-wordpress/image38.png
+ create mode 100644 dashboard/docs/images/reset-mysql-password/image1.png
+ create mode 100644 dashboard/docs/images/reset-mysql-password/image2.png
+ create mode 100644 dashboard/docs/images/reset-mysql-password/image3.png
+ create mode 100644 dashboard/docs/images/send-mail/image1.png
+ create mode 100644 dashboard/docs/images/send-mail/image2.png
+ create mode 100644 dashboard/docs/images/send-mail/image3.png
+ create mode 100644 dashboard/docs/images/transfer-files-ftp/image1.png
+ create mode 100644 dashboard/docs/images/transfer-files-ftp/image10.png
+ create mode 100644 dashboard/docs/images/transfer-files-ftp/image11.png
+ create mode 100644 dashboard/docs/images/transfer-files-ftp/image2.png
+ create mode 100644 dashboard/docs/images/transfer-files-ftp/image3.png
+ create mode 100644 dashboard/docs/images/transfer-files-ftp/image4.png
+ create mode 100644 dashboard/docs/images/transfer-files-ftp/image5.png
+ create mode 100644 dashboard/docs/images/transfer-files-ftp/image6.png
+ create mode 100644 dashboard/docs/images/transfer-files-ftp/image7.png
+ create mode 100644 dashboard/docs/images/transfer-files-ftp/image8.png
+ create mode 100644 dashboard/docs/images/transfer-files-ftp/image9.png
+ create mode 100644 dashboard/docs/images/troubleshoot-apache/image1.png
+ create mode 100644 dashboard/docs/images/troubleshoot-apache/image2.png
+ create mode 100644 dashboard/docs/images/troubleshoot-apache/image3.png
+ create mode 100644 dashboard/docs/images/troubleshoot-apache/image4.png
+ create mode 100644 dashboard/docs/images/troubleshoot-apache/image5.png
+ create mode 100644 dashboard/docs/images/troubleshoot-apache/image6.png
+ create mode 100644 dashboard/docs/images/troubleshoot-apache/image7.png
+ create mode 100644 dashboard/docs/images/troubleshoot-apache/image8.png
+ create mode 100644 dashboard/docs/images/use-different-php-version/image1.png
+ create mode 100644 dashboard/docs/images/use-php-fcgi/image1.png
+ create mode 100644 dashboard/docs/images/use-sqlite/image1.png
+ create mode 100644 dashboard/docs/images/use-sqlite/image2.png
+ create mode 100644 dashboard/docs/images/use-sqlite/image3.png
+ create mode 100644 dashboard/docs/increase-php-file-upload-limit.html
+ create mode 100644 dashboard/docs/increase-php-file-upload-limit.pdf
+ create mode 100644 dashboard/docs/increase-php-file-upload-limit.pdfmarks
+ create mode 100644 dashboard/docs/reset-mysql-password.html
+ create mode 100644 dashboard/docs/reset-mysql-password.pdf
+ create mode 100644 dashboard/docs/reset-mysql-password.pdfmarks
+ create mode 100644 dashboard/docs/send-mail.html
+ create mode 100644 dashboard/docs/send-mail.pdf
+ create mode 100644 dashboard/docs/send-mail.pdfmarks
+ create mode 100644 dashboard/docs/transfer-files-ftp.html
+ create mode 100644 dashboard/docs/transfer-files-ftp.pdf
+ create mode 100644 dashboard/docs/transfer-files-ftp.pdfmarks
+ create mode 100644 dashboard/docs/troubleshoot-apache.html
+ create mode 100644 dashboard/docs/troubleshoot-apache.pdf
+ create mode 100644 dashboard/docs/troubleshoot-apache.pdfmarks
+ create mode 100644 dashboard/docs/use-different-php-version.html
+ create mode 100644 dashboard/docs/use-different-php-version.pdf
+ create mode 100644 dashboard/docs/use-different-php-version.pdfmarks
+ create mode 100644 dashboard/docs/use-php-fcgi.html
+ create mode 100644 dashboard/docs/use-php-fcgi.pdf
+ create mode 100644 dashboard/docs/use-php-fcgi.pdfmarks
+ create mode 100644 dashboard/docs/use-sqlite.html
+ create mode 100644 dashboard/docs/use-sqlite.pdf
+ create mode 100644 dashboard/docs/use-sqlite.pdfmarks
+ create mode 100644 dashboard/es/faq.html
+ create mode 100644 dashboard/es/howto.html
+ create mode 100644 dashboard/es/howto_platform_links.html
+ create mode 100644 dashboard/es/howto_shared_links.html
+ create mode 100644 dashboard/es/index.html
+ create mode 100644 dashboard/faq.html
+ create mode 100644 dashboard/favicon.ico
+ create mode 100644 dashboard/fr/faq.html
+ create mode 100644 dashboard/fr/howto.html
+ create mode 100644 dashboard/fr/howto_platform_links.html
+ create mode 100644 dashboard/fr/howto_shared_links.html
+ create mode 100644 dashboard/fr/index.html
+ create mode 100644 dashboard/howto.html
+ create mode 100644 dashboard/howto_platform_links.html
+ create mode 100644 dashboard/howto_shared_links.html
+ create mode 100644 dashboard/hu/faq.html
+ create mode 100644 dashboard/hu/howto.html
+ create mode 100644 dashboard/hu/howto_platform_links.html
+ create mode 100644 dashboard/hu/howto_shared_links.html
+ create mode 100644 dashboard/hu/index.html
+ create mode 100644 dashboard/images/addons-video-thumb.png
+ create mode 100644 dashboard/images/apple-logo.png
+ create mode 100644 dashboard/images/appleVM-logo.png
+ create mode 100644 dashboard/images/background.png
+ create mode 100644 dashboard/images/bitnami-xampp.png
+ create mode 100644 dashboard/images/bitnami-xampp/image1.png
+ create mode 100644 dashboard/images/bitnami-xampp/image2.png
+ create mode 100644 dashboard/images/bitnami-xampp/image3.png
+ create mode 100644 dashboard/images/bitnami-xampp/image4.png
+ create mode 100644 dashboard/images/bitnami-xampp/image5.png
+ create mode 100644 dashboard/images/bitnami-xampp/image6.png
+ create mode 100644 dashboard/images/bitnami-xampp/image7.png
+ create mode 100644 dashboard/images/blog/download-xampp-vm.png
+ create mode 100644 dashboard/images/blog/heartbleed-affected-osx.png
+ create mode 100644 dashboard/images/blog/heartbleed-affected.png
+ create mode 100644 dashboard/images/blog/heartbleed-fixed.png
+ create mode 100644 dashboard/images/blog/phpinfo-section-1.png
+ create mode 100644 dashboard/images/blog/phpinfo-section-2.png
+ create mode 100644 dashboard/images/blog/xampp-vm-cakephp-1.png
+ create mode 100644 dashboard/images/blog/xampp-vm-cakephp-10.png
+ create mode 100644 dashboard/images/blog/xampp-vm-cakephp-11.png
+ create mode 100644 dashboard/images/blog/xampp-vm-cakephp-2.png
+ create mode 100644 dashboard/images/blog/xampp-vm-cakephp-3.png
+ create mode 100644 dashboard/images/blog/xampp-vm-cakephp-4.png
+ create mode 100644 dashboard/images/blog/xampp-vm-cakephp-5.png
+ create mode 100644 dashboard/images/blog/xampp-vm-cakephp-6.png
+ create mode 100644 dashboard/images/blog/xampp-vm-cakephp-7.png
+ create mode 100644 dashboard/images/blog/xampp-vm-cakephp-8.png
+ create mode 100644 dashboard/images/blog/xampp-vm-cakephp-9.png
+ create mode 100644 dashboard/images/blog/xampp-vm-general.png
+ create mode 100644 dashboard/images/blog/xampp-vm-manager.png
+ create mode 100644 dashboard/images/blog/xampp-vm-network.png
+ create mode 100644 dashboard/images/blog/xampp-vm-php-finder.png
+ create mode 100644 dashboard/images/blog/xampp-vm-php-output.png
+ create mode 100644 dashboard/images/blog/xampp-vm-tray.png
+ create mode 100644 dashboard/images/blog/xampp-vm-volumes.png
+ create mode 100644 dashboard/images/fastly-logo.png
+ create mode 100644 dashboard/images/fastly-logo@2x.png
+ create mode 100644 dashboard/images/favicon.png
+ create mode 100644 dashboard/images/flags/cn.png
+ create mode 100644 dashboard/images/flags/de.png
+ create mode 100644 dashboard/images/flags/en.png
+ create mode 100644 dashboard/images/flags/es.png
+ create mode 100644 dashboard/images/flags/fr.png
+ create mode 100644 dashboard/images/flags/hu.png
+ create mode 100644 dashboard/images/flags/it.png
+ create mode 100644 dashboard/images/flags/jp.png
+ create mode 100644 dashboard/images/flags/pl.png
+ create mode 100644 dashboard/images/flags/pt.png
+ create mode 100644 dashboard/images/flags/pt_br.png
+ create mode 100644 dashboard/images/flags/ro.png
+ create mode 100644 dashboard/images/flags/ru.png
+ create mode 100644 dashboard/images/flags/tr.png
+ create mode 100644 dashboard/images/flags/ur.png
+ create mode 100644 dashboard/images/flags/zh_cn.png
+ create mode 100644 dashboard/images/flags/zh_tw.png
+ create mode 100644 dashboard/images/linux-logo.png
+ create mode 100644 dashboard/images/middleman.png
+ create mode 100644 dashboard/images/pdf-icon.png
+ create mode 100644 dashboard/images/screenshots/xampp-linux-start.jpg
+ create mode 100644 dashboard/images/screenshots/xampp-macosx-download-installer.jpg
+ create mode 100644 dashboard/images/screenshots/xampp-macosx-launch-credentials.jpg
+ create mode 100644 dashboard/images/screenshots/xampp-macosx-run-installer.jpg
+ create mode 100644 dashboard/images/screenshots/xampp-macosx-stack-manager-general.jpg
+ create mode 100644 dashboard/images/screenshots/xampp-macosx-stack-manager-network.jpg
+ create mode 100644 dashboard/images/screenshots/xampp-macosx-stack-manager-services.jpg
+ create mode 100644 dashboard/images/screenshots/xampp-macosx-stack-manager-volumes.jpg
+ create mode 100644 dashboard/images/screenshots/xampp-macosx-stack-manager.jpg
+ create mode 100644 dashboard/images/screenshots/xampp-macosx-start.jpg
+ create mode 100644 dashboard/images/screenshots/xampp-macosx-wordpress.jpg
+ create mode 100644 dashboard/images/screenshots/xampp-windows-start.jpg
+ create mode 100644 dashboard/images/social-icons-large.png
+ create mode 100644 dashboard/images/social-icons-large@2x.png
+ create mode 100644 dashboard/images/social-icons.png
+ create mode 100644 dashboard/images/social-icons@2x.png
+ create mode 100644 dashboard/images/sourceforge-logo.png
+ create mode 100644 dashboard/images/sourceforge-logo@2x.png
+ create mode 100644 dashboard/images/stack-icons.png
+ create mode 100644 dashboard/images/stack-icons@2x.png
+ create mode 100644 dashboard/images/stamps/stamp-173x38.gif
+ create mode 100644 dashboard/images/stamps/stamp-80x15.gif
+ create mode 100644 dashboard/images/stamps/stamp-88x31.gif
+ create mode 100644 dashboard/images/team/beltran-rueda.png
+ create mode 100644 dashboard/images/team/daniel-lopez.png
+ create mode 100644 dashboard/images/team/kai-seidler.jpg
+ create mode 100644 dashboard/images/team/kay-vogelgesang.jpg
+ create mode 100644 dashboard/images/team/paul-hinz.jpg
+ create mode 100644 dashboard/images/twitter-bird.png
+ create mode 100644 dashboard/images/windows-logo.png
+ create mode 100644 dashboard/images/xampp-cloud.png
+ create mode 100644 dashboard/images/xampp-cloud@2x.png
+ create mode 100644 dashboard/images/xampp-logo.svg
+ create mode 100644 dashboard/images/xampp-newsletter-logo.png
+ create mode 100644 dashboard/index.html
+ create mode 100644 dashboard/it/faq.html
+ create mode 100644 dashboard/it/howto.html
+ create mode 100644 dashboard/it/howto_platform_links.html
+ create mode 100644 dashboard/it/howto_shared_links.html
+ create mode 100644 dashboard/it/index.html
+ create mode 100644 dashboard/javascripts/all.js
+ create mode 100644 dashboard/javascripts/modernizr.js
+ create mode 100644 dashboard/jp/faq.html
+ create mode 100644 dashboard/jp/howto.html
+ create mode 100644 dashboard/jp/howto_platform_links.html
+ create mode 100644 dashboard/jp/howto_shared_links.html
+ create mode 100644 dashboard/jp/index.html
+ create mode 100644 dashboard/phpinfo.php
+ create mode 100644 dashboard/pl/faq.html
+ create mode 100644 dashboard/pl/howto.html
+ create mode 100644 dashboard/pl/howto_platform_links.html
+ create mode 100644 dashboard/pl/howto_shared_links.html
+ create mode 100644 dashboard/pl/index.html
+ create mode 100644 dashboard/pt_br/faq.html
+ create mode 100644 dashboard/pt_br/howto.html
+ create mode 100644 dashboard/pt_br/howto_platform_links.html
+ create mode 100644 dashboard/pt_br/howto_shared_links.html
+ create mode 100644 dashboard/pt_br/index.html
+ create mode 100644 dashboard/ro/faq.html
+ create mode 100644 dashboard/ro/howto.html
+ create mode 100644 dashboard/ro/howto_platform_links.html
+ create mode 100644 dashboard/ro/howto_shared_links.html
+ create mode 100644 dashboard/ro/index.html
+ create mode 100644 dashboard/ru/faq.html
+ create mode 100644 dashboard/ru/howto.html
+ create mode 100644 dashboard/ru/howto_platform_links.html
+ create mode 100644 dashboard/ru/howto_shared_links.html
+ create mode 100644 dashboard/ru/index.html
+ create mode 100644 dashboard/stylesheets/all-rtl.css
+ create mode 100644 dashboard/stylesheets/all.css
+ create mode 100644 dashboard/stylesheets/asciidoctor.css
+ create mode 100644 dashboard/stylesheets/normalize.css
+ create mode 100644 dashboard/tr/faq.html
+ create mode 100644 dashboard/tr/howto.html
+ create mode 100644 dashboard/tr/howto_platform_links.html
+ create mode 100644 dashboard/tr/howto_shared_links.html
+ create mode 100644 dashboard/tr/index.html
+ create mode 100644 dashboard/ur/faq.html
+ create mode 100644 dashboard/ur/howto.html
+ create mode 100644 dashboard/ur/howto_platform_links.html
+ create mode 100644 dashboard/ur/howto_shared_links.html
+ create mode 100644 dashboard/ur/index.html
+ create mode 100644 dashboard/zh_cn/faq.html
+ create mode 100644 dashboard/zh_cn/howto.html
+ create mode 100644 dashboard/zh_cn/howto_platform_links.html
+ create mode 100644 dashboard/zh_cn/howto_shared_links.html
+ create mode 100644 dashboard/zh_cn/index.html
+ create mode 100644 dashboard/zh_tw/faq.html
+ create mode 100644 dashboard/zh_tw/howto.html
+ create mode 100644 dashboard/zh_tw/howto_platform_links.html
+ create mode 100644 dashboard/zh_tw/howto_shared_links.html
+ create mode 100644 dashboard/zh_tw/index.html
+ create mode 100644 favicon.ico
+ create mode 100644 img/module_table_bottom.png
+ create mode 100644 img/module_table_top.png
+ create mode 100644 index.php
+ create mode 100644 package-lock.json
+ create mode 100644 xampp/.modell
+ create mode 100644 xampp/.modell-usb
+ create mode 100644 xampp/.version
+PS C:\xampp\htdocs> git remote add origin https://github.com/Abdulaib33/xampp.git
+PS C:\xampp\htdocs> git push -u origin main
+>>
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Abdulaib33/xampp.git'
+PS C:\xampp\htdocs>
