@@ -14,9 +14,9 @@ class UploadDataController extends Controller
      */
     public function index() {
         // Return the view for the upload page
-        return view("uploadpage");
+        return view("upload-page");
     }
-
+ 
     /**
      * Handle the form submission and file upload.
      *

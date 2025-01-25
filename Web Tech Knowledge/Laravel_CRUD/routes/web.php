@@ -1,6 +1,8 @@
 <?php
 
-// Import the Route facade to define routes
+// Import necessary controllers and Route facade
+use App\Http\Controllers\UploadDataController;
+use App\Http\Controllers\ShowController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,12 +22,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Define a GET route for the '/UploadPage' URL
-Route::get('/UploadPage', 'App\Http\Controllers\UploadDataController@index');
-// This route calls the `index` method of the `UploadDataController` when the '/UploadPage' URL is accessed via a GET request.
-// The `index` method typically displays a form or page for uploading data.
+// Group routes for UploadDataController
+Route::controller(UploadDataController::class)->group(function () {
+    // Display the upload form
+    // When a user visits '/upload-page', the `index` method of `UploadDataController` is called
+    Route::get('/upload-page', 'index')->name('upload.page');
 
-// Define a POST route for the '/UploadData' URL
-Route::post('/UploadData', 'App\Http\Controllers\UploadDataController@store');
-// This route calls the `store` method of the `UploadDataController` when the '/UploadData' URL is accessed via a POST request.
-// The `store` method typically handles form submissions, processes uploaded data, and saves it to the database.
+    // Handle form submissions
+    // When a user submits a form to '/upload-data', the `store` method of `UploadDataController` is called
+    Route::post('/upload-data', 'store')->name('upload.data');
+});
+
+// Route for ShowController
+// When a user visits '/upload-data', the `show` method of `ShowController` is called
+Route::get('/upload-data', [ShowController::class, 'show'])->name('upload.show');
