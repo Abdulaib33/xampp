@@ -5,8 +5,7 @@
     - `method`: Specifies the HTTP method to use when submitting the form (e.g., GET, POST).
     - `enctype`: Specifies how the form data should be encoded when submitting it to the server.
 -->
-<form action="{{ route('/upload.data') }}" method="POST" enctype="multipart/form-data">
-
+<form action="{{ route('upload.data') }}" method="POST" enctype="multipart/form-data">
     <!--
         CSRF Token:
         - Laravel uses CSRF (Cross-Site Request Forgery) tokens to protect against malicious attacks.

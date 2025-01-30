@@ -1,0 +1,247 @@
+/* Default state: Button has a blue background, 100px width, and 40px height.
+
+Hover state: Button changes to a red background, 120px width, and 50px height.
+
+Use transition to animate these changes over 0.3s. */
+
+.btn {
+    background-color: blue;
+    width: 100px;
+    height: 40px;
+}
+
+.btn:hover {
+    background-color: red;
+    width: 120px;
+    height: 50px;
+    transition: all 0.3s;
+}
+
+
+/* Both boxes should have a width of 200px, padding of 20px, and a border of 5px solid black.
+
+The first box should use content-box, and the second should use border-box.
+
+Observe how their total widths differ. */
+
+.box {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid black;
+}
+
+.content-box {
+    box-sizing: content-box;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+
+/* Use inline-block to display the links horizontally.
+
+Add padding and a background color to each link. */
+
+
+nav {
+    display: inline-block;
+}
+
+nav a {
+    padding: 3px;
+    background-color: royalblue;
+}
+
+
+/* The container should take up 80% of the screen width but never exceed 1200px. */
+
+.container {
+    width: 88%;
+    max-width: 1200px;
+}
+
+
+
+
+/* Set the height to 200px and the max-height to 300px.
+
+Add enough content to make the box scrollable. */
+
+.scrollable-box {
+    height: 200px;
+    max-height: 300px;
+}
+
+
+/* The first box should use overflow: hidden.
+
+The second box should use overflow: scroll. */
+
+.hidden-overflow {
+    overflow: hidden;
+}
+
+.scroll-overflow {
+    overflow: scroll;
+}
+
+
+
+/* Use a background image that covers the entire area and doesn’t repeat.
+
+Set background-size: cover and background-position: center. */
+
+.hero {
+    background: url("https://picsum.photos/200") no-repeat;
+    background-size: cover; /* JUST REMOVE THIS TO UNDERSTAND WHAT'S GOING ON*/
+    height: 100px;
+    background-position: center;
+}
+
+
+/* Add a 2px dashed black border.
+
+Round the corners with a 10px border radius. */
+
+.box {
+    border: 2px dashed black;
+    border-radius: 10px;
+}
+
+
+
+/* Add padding to the button to make it look balanced (e.g., 10px 20px). */
+
+.btn {
+    padding: 20px;
+}
+
+/* Space the boxes evenly using margins (e.g., 10px margin for each). */
+
+.box {
+    margin: 10px;
+}
+
+
+
+/* Add a shadow to the card to make it look elevated (e.g., 2px 2px 10px rgba(0, 0, 0, 0.5)). */
+
+.card {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: aliceblue;
+    width: 200px;
+}
+
+
+/* Set the text color to #333. */
+
+.text {
+    color: #333;
+}
+
+
+/* Set the font to 'Arial', sans-serif. */
+
+.heading {
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* Set the heading font size to 24px and the paragraph font size to 16px. */
+.heading {
+    font-size: 24px;
+
+}
+
+.paragraph {
+    font-size: 16px;
+}
+
+
+/* Center-align the heading and right-align the paragraph. */
+
+.center-heading {
+    text-align: center;
+}
+
+.right-paragraph {
+    text-align: right;
+}
+
+
+/* Remove the underline from the link.
+
+Add an underline to the heading. */
+
+a {
+    text-decoration: none;
+}
+
+.underlined-heading {
+    text-decoration: underline;
+}
+
+
+
+/* Transform the heading to uppercase.
+
+Capitalize the first letter of each word in the paragraph. */
+
+.uppercase-heading {
+    text-transform: uppercase;
+}
+
+.capitalized-paragraph {
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+/* Card width: 300px.
+
+Padding: 20px.
+
+Border: 1px solid #ddd.
+
+Border radius: 10px.
+
+Box shadow: 2px 2px 10px rgba(0, 0, 0, 0.1).
+
+Hover effect: Scale the card slightly and add a darker shadow.
+
+Text: Center-align the heading and make it uppercase.
+
+Background: Use a light background color. */
+
+
+/* I WAS TO LAZY TO DO IT SO, I SKIP IT */
+.card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-heading {
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+  }
+  
+  .card-text {
+    text-align: center;
+    color: #666;
+  }

@@ -22,6 +22,8 @@
     <body class="font-sans antialiased dark:bg-black dark:text-white/50">
         <div class="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
             <a href="{{ ('/tasks') }}">SEE TASKS</a>
+
+            <h1><a href="{{ '/todos' }}">see your Todo LIST</a></h1>
         </div>
     </body>
 </html>

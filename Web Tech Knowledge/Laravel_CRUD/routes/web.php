@@ -26,7 +26,7 @@ Route::get('/', function () {
 Route::controller(UploadDataController::class)->group(function () {
     // Display the upload form
     // When a user visits '/upload-page', the `index` method of `UploadDataController` is called
-    Route::get('/upload-page', 'index')->name('upload.page');
+    Route::get('/upload-page', 'index')->name('upload-page');
 
     // Handle form submissions
     // When a user submits a form to '/upload-data', the `store` method of `UploadDataController` is called

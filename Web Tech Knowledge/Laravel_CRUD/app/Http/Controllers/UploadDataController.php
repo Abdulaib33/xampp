@@ -36,16 +36,19 @@ class UploadDataController extends Controller
             $file = $request->file('file');
             $filename = time() . '.' . $file->getClientOriginalExtension();
             $file->move(public_path('storage'), $filename);
+    
+            // Save data to the database
+            $data = new Personal;
+            $data->name = $request->name;
+            $data->email = $request->email;
+            $data->file = $filename; // Save the filename to the database
+            $data->save();
+    
+            // Redirect back with a success message
+            return redirect()->back()->with('success', 'Data uploaded successfully!');
         }
     
-        // Save data to the database
-        $data = new Personal;
-        $data->name = $request->name;
-        $data->email = $request->email;
-        $data->file = $filename; // Save the filename to the database
-        $data->save();
-    
-        // Redirect back with a success message
-        return redirect()->back()->with('success', 'Data uploaded successfully!');
+        // If file upload fails, redirect back with an error message
+        return redirect()->back()->with('error', 'File upload failed!');
     }
 }

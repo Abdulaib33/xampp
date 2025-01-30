@@ -14,6 +14,9 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Personal extends Model
 {
+
+
+    protected $fillable = ['name', 'email', 'file'];
     // The $table property specifies the database table associated with this model.
     // If not specified, Laravel assumes the table name is the plural form of the model name (e.g., "personals").
     // protected $table = 'personal';
