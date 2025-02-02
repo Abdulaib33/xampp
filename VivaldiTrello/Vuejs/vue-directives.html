@@ -106,6 +106,15 @@ v-html renders raw HTML content (e.g., a message with bold and italic tags).
 v-text renders plain text (without HTML formatting).
 Goal: Understand the difference between v-html and v-text and when to use them. -->
 
+<!-- v-html test -->
+<div> without the v-html {{ htmlContent }}</div>
+<!-- with the v-html -->
+<div v-html="htmlContent">with the v-html</div>
+
+<!-- v-text test -->
+<p>without v-text: Old text</p>
+<!-- with v-text -->
+<p v-text="pText">Old text.</p>
 
 
     
@@ -140,7 +149,8 @@ Goal: Understand the difference between v-html and v-text and when to use them. 
                                     <li>2</li>
                                     <li>3</li>
                                     <li>4</li>
-                                </ul>`
+                                </ul>`,
+                    pText: "This is the new text"
 
                 }
             },
