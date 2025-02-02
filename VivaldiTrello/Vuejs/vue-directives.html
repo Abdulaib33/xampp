@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue directives</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>  
+
+</head>
+<body>
+
+<div id="app">
+
+<!-- 1. v-if / v-else / v-show – Conditional Rendering
+Create a simple application that shows a welcome message based on the time of day:
+
+If it's morning, show "Good Morning".
+If it's afternoon, show "Good Afternoon".
+If it's evening, show "Good Evening".
+Use v-if, v-else-if, and v-else to conditionally render each message based on a timeOfDay data property.
+Goal: Understand how v-if, v-else, and v-show control conditional rendering. -->
+
+<strong v-if="exercices1 === 'morning'">Good Morning</strong>
+<strong v-else-if="exercices1 === 'afternoon'">Good Afternoon</strong>
+<strong v-show="exercices1 === 'evening'">Good Evening</strong>
+
+<!-- 2. v-for – Looping through Lists
+Create a list of items (e.g., fruits, books, or tasks).
+
+Display the list using v-for in an unordered list (<ul>).
+Each list item should also show its index (using index from v-for).
+Bonus: Add an input field that lets users add new items to the list dynamically.
+
+Goal: Understand how v-for works and how to iterate over arrays and objects. -->
+
+<ul v-for="(x, index) in food">
+    <li>
+        {{ index }}, {{ x.name }} :
+    </li>
+    <img v-bind:src="x.url" alt="">
+</ul>
+
+<!-- 3. v-bind – Dynamic Attributes
+Create an image gallery:
+
+Use v-bind:src to dynamically bind the image source.
+Use v-bind:class to dynamically apply different classes based on the image's status (e.g., active, inactive).
+Bonus: Use v-bind:style to change the image’s width based on user input.
+
+Goal: Learn how to dynamically set attributes and classes using v-bind. -->
+
+<ul v-for="(x, index) in food">
+
+    <li>
+        <img 
+        v-bind:src="x.url" 
+        v-bind:class="{active: x.status === 'active', inactive: x.status === 'inactive'}"
+        alt="">
+    </li>
+    
+</ul>
+
+<!-- 4. v-model – Two-way Data Binding
+Create a simple form that:
+
+Binds an input field to a name property.
+Uses v-model to bind a checkbox to a isChecked property.
+Display the name and isChecked values below the form as they change.
+Bonus: Add a button that toggles the checkbox state.
+
+Goal: Master how v-model allows for two-way data binding in forms and input elements. -->
+
+
+<input type="text" v-model="nameExo4">
+<p>{{ nameExo4 }}</p>
+<input type="checkbox" v-model="isChecked4">
+<p>{{ isChecked4 }}</p>
+
+<button @click="toggleCheckbox4">Toggle checkbox</button>
+
+
+<!-- 5. v-on (@click, @keyup) – Event Handling
+Create a counter app:
+
+Display a button with the text "Increment".
+When the button is clicked (@click), increment the counter value.
+Display the updated counter value.
+Also, listen for a keyup event on an input field and display the input value.
+Goal: Learn how to handle events (@click, @keyup) using v-on. -->
+
+
+
+
+<button @click="incrementConter5">Increment</button>
+
+    <p>Counter : {{ counter5 }} </p>
+
+<input type="text" v-model="inputValue">
+
+    <p>inputValue: {{ inputValue }}</p>
+
+<!-- 6. v-html, v-text – Rendering HTML/Text
+Create a component where:
+
+v-html renders raw HTML content (e.g., a message with bold and italic tags).
+v-text renders plain text (without HTML formatting).
+Goal: Understand the difference between v-html and v-text and when to use them. -->
+
+
+
+    
+        <h1>{{ test }}</h1>
+    </div>
+    
+    <script>    
+
+        const app = Vue.createApp({
+            data() {
+                return {
+                    test: "The Truth is not what you want it to be, it's what it's, you should bend to it, or live a life of lie",
+                    exercices1: "afternoon",
+
+                    food: [
+                        { name: "Burrito", url: "./img/burrito.png", status: "active" },
+                        { name: "Salad", url: "./img/saladLiègoise.png", status: "inactive" },
+                        { name: "Chocolat Cake sandwich", url: "./img/chocolateCakeSandwich.png", status: "active" },
+                        { name: "Soup", url: "./img/soup.png", status: "inactive" },
+                        { name: "Fish and chips", url: "./img/FishAndChips.png", status: "active" },
+                        { name: "Pizza", url: "./img/pizza.png", status: "inactive" },
+                        { name: "Rice", url: "./img/Rice.png", status: "active" }
+                    ],
+
+                    nameExo4: "",
+                    isChecked4: "false",
+                    counter5: 0,
+                    inputValue: "",
+
+                    htmlContent: `<ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                </ul>`
+
+                }
+            },
+
+            methods: {
+                toggleCheckbox4() {
+                    this.isChecked4 = !this.isChecked4
+                },
+
+                incrementConter5() {
+                    this.counter5 += 1
+                }
+            }
+        });
+
+        app.mount("#app")
+    </script>
+    
+
+
+     <style>
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        body {
+            background-color: darkslategray;
+            color: wheat;
+            
+        }
+
+        * {
+            text-decoration: none;
+            color: wheat;
+        }
+
+        /* Container for the app */
+        #app {
+            width: 80%;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #b63f3f;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling for conditional rendering messages */
+        strong {
+            display: block;
+            font-size: 24px;
+            font-weight: bold;
+            color: #2e2e2e;
+            margin: 10px 0;
+        }
+
+        strong[v-show="exercices1 === 'evening'"] {
+            color: #ff5722; /* Evening message has different color */
+        }
+
+        /* Styling for the list of food items */
+        ul {
+            padding-left: 0;
+            list-style-type: none;
+            margin: 20px 0;
+        }
+
+        li {
+            padding: 12px;
+            background-color: #999494;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        li img {
+            max-width: 100px;
+            border-radius: 6px;
+            margin-top: 8px;
+        }
+
+        /* Image Gallery */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin-top: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling for input fields and buttons */
+        input[type="text"], input[type="checkbox"], button {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            margin: 10px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:disabled {
+            background-color: #b2b2b2;
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        /* Styling for the dynamic text rendered via v-html */
+        h1 {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .active {
+            border: 3px solid green;
+        }
+
+        .inactive {
+            opacity: 0.5;
+            border: 3px solid red;
+        }
+
+    </style>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js First App</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>  
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        input { padding: 8px; margin: 10px; }
+        button { padding: 10px 15px; background-color: #42b983; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #36926b; }
+    </style>
+</head>
+<body>
+
+    <div id="app">
+        <h1>{{ message }}</h1>
+        
+        <!-- New input field to change message dynamically -->
+        <input type="text" v-model="message" placeholder="Type a new message...">
+        
+        <br>
+
+        <!-- Button to reset message -->
+        <button @click="resetMessage">Reset</button>
+    </div>
+
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    message: "Hello, Vue.js! 🚀"
+                };
+            },
+            methods: {
+                resetMessage() {
+                    this.message = "Hello, Vue.js! 🚀";
+                }
+            }
+        });
+
+        app.mount("#app");
+    </script>
+
+</body>
+</html>

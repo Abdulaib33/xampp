@@ -17,6 +17,7 @@ $controller = new BookController();
 
 // STEP 3: Call the Controller's action (method) to run the logic
 $controller->listBooks();
+
 ?>
 
 

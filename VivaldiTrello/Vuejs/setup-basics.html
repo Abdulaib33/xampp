@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setup &[] bascis</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>  
+
+</head>
+<body>
+
+    <div id="app">
+
+        <h1>{{ messages }}</h1>
+        <h1>{{ messages }}</h1>
+        <h1>{{ messages }}</h1>
+        <h1>{{ messages }}</h1>
+        <h1>{{ messages }}</h1>
+        <h1>{{ messages }}</h1>
+        <h1>{{ messages }}</h1>
+        <h1>{{ messages }}</h1>
+        <h1>{{ messages }}</h1>
+        <h1>{{ messages }}</h1>
+
+        <p>
+            {{ username === "Abdoulaye" ? "Welcome back Abdoulaye" : "Welcome guest" }}
+        </p>
+
+        <img v-bind:src="imageSrc" alt="">
+
+
+        <input v-model:="name" placeholder="Enter your name">
+        <h2>{{ name }}</h2>
+
+        <input type="checkbox" v-model:="isChecked">
+        <p> {{ isChecked ? "Checked" : "Not Checked" }}</p>
+        
+
+        <form action="">
+            <input type="text" v-model:="username2">
+
+            <label for="">Agree with terms and Service</label>
+            <input type="checkbox" v-model="isChecked2">
+
+            <button :disabled="!isChecked2" @click.prevent="displayWelcomeMessage" >submit</button>
+        </form>
+
+        <h1 v-if="welcomeMessage"> {{ welcomeMessage}} </h1>
+
+    </div>  
+
+
+    <script>
+
+        const app = Vue.createApp({
+
+            data() {
+                return {
+                    messages: "AlhamdoulilAllah",
+                    username: "Abdoulaye",
+                    imageSrc: "https://fastly.picsum.photos/id/499/200/200.jpg?hmac=6OuceXs-LrhY-PtwyqBs_bARD8YWZEj9XuZ_ZY894Wc",
+                    name: "",
+                    isChecked: true,
+
+                    username2: "",
+                    isChecked2: false,
+                    welcomeMessage: ""
+
+
+                }
+            },
+
+            methods: {
+                updateMessage() {
+                    setTimeout(() => {
+                        this.messages = "AlhamdoulilAllah, i will master vuejs, in God wills"
+                    },3000)
+                },
+
+                updateImage() {
+                    setTimeout(() => {
+                        this.imageSrc = "https://fastly.picsum.photos/id/564/2007/2007.jpg?hmac=BnrBNYHwbMbGF04TJOJMshqzTpjHgooxnaxKenCnmxg"
+                    }, 5000)
+                },
+                displayWelcomeMessage() {
+                    this.welcomeMessage = `Welcome, ${this.username2}`
+                }
+            },
+
+            mounted() {
+                this.updateMessage();
+                this.updateImage();
+                this.displayWelcomeMessage();
+            },
+
+        });
+
+        app.mount("#app")
+
+    </script>
+    
+</body>
+</html>

@@ -10,7 +10,8 @@ function App() {
     color: "#FF0000"
   }
   let background = {
-    backgroundColor: "aqua"
+    backgroundColor: "darkslategray",
+    color: "wheat"
   }
 
   
@@ -46,9 +47,22 @@ function App() {
       Multi line comment ... 
       
       */}
-      <img src= {logo} />
+      <img src= {logo} alt="coucou"/>
+
+      <HelloWorld> 
+        <h1>Abdoulaye Bayo</h1>
+      </HelloWorld>
+
     </div>
   );
+}
+
+function HelloWorld() {
+  return (
+
+    <h1>Hello World</h1>
+
+  )
 }
 
 function Header() {
