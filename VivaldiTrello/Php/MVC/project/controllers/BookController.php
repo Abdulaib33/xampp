@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . '/../models/BookModel.php'; // Correct path to include the model
+
 class BookController {
   public function listBooks() {
     // STEP 4: Create a Model to get data
@@ -8,7 +10,7 @@ class BookController {
     $books = $model->getBooks();
 
     // STEP 6: Load the View and pass the data to it
-    include '../views/book_list.php'; 
+    include __DIR__ . '/../views/book_list.php'; 
   }
 }
 ?>

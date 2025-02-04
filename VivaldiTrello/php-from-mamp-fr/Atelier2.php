@@ -17,9 +17,9 @@
             ["Nom" => "Aminata", "Age" => 25, "Ville" => "Liège"]
         ];
 
-        foreach ($exercice9 as $x => $y) {   // I PREFER THIS ONE, IT'S SHORT BUT WAIT, THE OTHER ONE IS BETTER BECAUSE WE DONT HAVE TO CONCATENATE for exemple ["Nom"], ["Age"], ["Ville"] etc etc...
-            echo $x . " : " . $y['Nom'] . " : " .  $y['Age'] . " : " . $y['Ville'] . "<br>";
-        }
+        // foreach ($exercice9 as $x => $y) {   // I PREFER THIS ONE, IT'S SHORT BUT WAIT, THE OTHER ONE IS BETTER BECAUSE WE DONT HAVE TO CONCATENATE for exemple ["Nom"], ["Age"], ["Ville"] etc etc...
+        //     echo $x . " : " . $y['Nom'] . " : " .  $y['Age'] . " : " . $y['Ville'] . "<br>";
+        // }
 
         foreach ($exercice9 as $phase1) {  // I PREFER THIS ONE IT'S NOT THAT SHORT, BUT WE DONT NEED TO CONCATENATE for exemple ["Nom"], ["Age"], ["Ville"] etc etc, I PREFER THIS ONE FOR SIMPLICITY AND EFFICACITY and IT'S LESS COMPLEX at THE SYNTAX
             foreach ($phase1 as $phaseFinal => $phaseFinal2) {

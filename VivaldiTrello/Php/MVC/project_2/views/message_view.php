@@ -14,11 +14,11 @@
 </style>
 
     <h1>
-        COUCOUCOUCOCUCOUC
+        COUCOUCOUCOCUCOUCOU
     </h1>
 
     <h2><?php 
-        echo $message;
+        echo $testFinolly;
     ?></h2>
 
 </body>
