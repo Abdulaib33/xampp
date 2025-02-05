@@ -11,7 +11,17 @@
   <ul>
     <!-- STEP 6a: Loop through the data passed from the Controller -->
     <?php foreach ($books as $book): ?>
-      <li><?php echo $book['title']; ?> by <?php echo $book['author']; ?></li>
+      <li>
+        <?php echo $book['title']; ?> by <?php echo $book['author']; ?>
+      </li>
+    <?php endforeach; ?>
+
+    <hr>
+
+    <?php foreach ($books as $x => $y): ?> 
+      <li>
+        <?php echo $x; ?> by <?php echo $y['author']; ?>
+      </li>
     <?php endforeach; ?>
   </ul>
 </body>
