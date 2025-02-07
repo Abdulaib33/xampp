@@ -4,6 +4,26 @@
     <h1>{{ message }}</h1>
     <input v-model="message" placeholder="Type Something">
     <button @click="resetMessage">Reset</button>
+
+    <h1>{{ message2 }}</h1>
+    <button @click="changeMessage2">Click Me</button>
+
+    <h1>{{ message2_1 }}</h1>
+    <p>Current Count: {{ count }}</p>
+    <button @click="increaseCount">Increase Count +1</button>
+    <button @click="descreaseCount">Decrease Count -1</button>
+    <button @click="resetCount">Reset Count 0</button>
+
+    <p>Current date : {{ new Date().toLocaleDateString() }}</p>
+
+    <img :src="imageUrl" alt="Vue Logo">
+    <a :href="profileLink">VisitProfile</a>
+
+    <input v-model="username" placeholder="Enter you Username">
+       <p>Hello, {{username}}</p> 
+    <p v-if="isLoggedIn">Welcome Back</p>
+    <p v-else>Please Log In</p>
+
     </div>
   </div>
 </template>
@@ -15,12 +35,34 @@ export default {
   name: 'App',
   data() {
     return {
-      message: 'Hello Vue!'
+      message: 'Hello Vue!',
+      message2: "Hello Vue!",
+      message2_1: "Welcome to Vue.js",
+      count: 0,
+      imageUrl: "https://vuejs.org/images/logo.png",
+      profileLink: "https://vuejs.org",
+      username: '',
+      isLoggedIn: false
     }
   },
   methods: {
     resetMessage() {
       this.message = "Hello Vue!";
+    }, 
+    changeMessage2() {
+      this.message2 = "You click the button",
+      setTimeout(() => {
+        this.message2 = "Hello Vue! back after 2secs";
+      }, 2000);
+    },
+    increaseCount() {
+      this.count += 1
+    },
+    resetCount() {
+      this.count = 0
+    },
+    descreaseCount() {
+      this.count -= 1
     }
   }
 }
@@ -56,7 +98,7 @@ export default {
 .container {
   text-align: center;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.1);
+  background: darkslategray;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);

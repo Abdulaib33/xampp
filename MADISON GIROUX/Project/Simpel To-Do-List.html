@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do List - Managing Tasks Dynamically </title>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body class="container">
+
+<style>
+        body {
+        background-color: darkslategray;
+        color: wheat;
+        
+    }
+
+    * {
+        text-decoration: none;
+        color: wheat;
+    }
+</style>
+
+
+<div id="app">
+
+    <h1>{{ message }}</h1>
+
+    <h1>Simple To-Do List</h1>
+<!-- Input field with v-model for two-way binding -->
+    <input type="text" 
+    v-model="newTask" 
+    placeholder="Enter a Task"
+    @keyup.enter="addTask"
+    />
+
+    <!-- Button to add task -->
+    <button @click="addTask">AddTask</button>
+    
+    <!-- Display tasks dynamically -->
+    <ul v-if="tasks.length">
+        <li v-for="(task, index) in tasks" :key="index">
+            {{ task }} , {{ index }}
+            <button @click="removeTask(index)">Remove</button>
+        </li>
+    </ul>
+    <p v-else> No tasks yet add a new task above .</p>
+
+    <!-- Button to clear all tasks -->
+    <button v-if="tasks.length" @click="clearAllTasks">Clear All Tasks</button>
+
+</div>
+ 
+
+<script>
+    const app = Vue.createApp({
+        data() {
+            return {
+                message: "Test 1",
+                newTask: "", // Initially It's an Empty String
+                tasks: []
+            }
+        },
+        methods: {
+            addTask() {
+                if (this.newTask.trim() != "") { // Don't add empty tasks
+                    this.tasks.push(this.newTask) // putting the input value in the array tasks[]
+                    this.newTask = ""; // Clear the input field after adding a task
+                    this.newTask.focus() // i have no idea why it didnt work
+                }
+            },
+            removeTask(index) {
+                this.tasks.splice(index, 1) // Remove the task at the beginning of task
+            },
+            clearAllTasks() {
+                this.tasks = []
+            }
+        },
+
+    })
+
+    app.mount("#app")
+</script>
+
+
+</body>
+</html>
