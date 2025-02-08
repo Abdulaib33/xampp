@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" @click="handleParentClick">
     <div class="container">
     <h1>{{ message }}</h1>
     <input v-model="message" placeholder="Type Something">
@@ -24,6 +24,19 @@
     <p v-if="isLoggedIn">Welcome Back</p>
     <p v-else>Please Log In</p>
 
+    <div @click.stop="handleChildClick"> <!-- The .stop will prevent the handleParentClick to execute when we click the child, but when we click the parent the child will not be executed aswell -->
+      Click inside this box
+    </div>
+
+
+
+    <h1>Computed Properties Example</h1>
+
+    <input v-model="firstname" placeholder="Enter your Firstname">
+    <input v-model="lastname" placeholder="Enter your Lastname">
+    <p>Your fullname is {{ fullname }}</p>
+
+
     </div>
   </div>
 </template>
@@ -42,7 +55,10 @@ export default {
       imageUrl: "https://vuejs.org/images/logo.png",
       profileLink: "https://vuejs.org",
       username: '',
-      isLoggedIn: false
+      isLoggedIn: false,
+
+      firstname: "",
+      lastname: ""
     }
   },
   methods: {
@@ -63,6 +79,20 @@ export default {
     },
     descreaseCount() {
       this.count -= 1
+    },
+
+
+    handleParentClick() {
+      alert("Parent Clicked")
+    },
+    handleChildClick() {
+      alert("Child Clicked")
+    }
+  },
+
+  computed: {
+    fullname() {
+      return `${this.firstname} ${this.lastname}`
     }
   }
 }

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker App – Managing Expenses and Budgets</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body class="container">
+
+<style>
+    body {
+        background-color: darkslategray;
+        color: wheat;
+    }
+    * {
+        text-decoration: none;
+        color: wheat;
+    }
+</style>
+
+<div id="app">
+    <h1>
+        {{ test1 }}
+    </h1>
+    <h2>Expense Tracker</h2>
+    <!-- Input fields for adding expenses -->
+    <div>
+        <input type="text" v-model="newDescription" placeholder="Enter expense description">
+        <input type="number" v-model="newAmount" placeholder="Amount">
+        <select v-model="newCategory">
+            <option value="" disabled>Select Category</option>
+            <option value="Food">Food</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Transport">Transport</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+    <!-- Checkbox for marking expense as necessary -->
+    <label>
+        <input type="checkbox" v-model="isNecessary">Necessary Expense
+    </label>
+    <!-- Button to add the expense -->
+    <button type="button" @click="addExpense">Add Expense</button>
+    
+    <!-- Display the list of expenses dynamically -->
+    <ul v-if="expenses.length">
+        <li v-for="(expense, index) in expenses" :key="index">
+            {{ expense.description }} - {{ expense.amount }} {{ expense.category }}
+            ({{ expense.necessary ? 'Necessary' : 'Optional' }})
+            <button @click="removeExpense(index)">Remove</button>
+        </li>
+    </ul>
+    <p v-else>No expenses added yet.</p>
+    <!-- Display total expenses and remaining budget using computed properties -->
+    <p>Total Expenses: ${{ totalExpenses }}</p>
+    <p>Remaining Budget: ${{ remainingBudget }}</p>
+</div>
+
+<script>
+    const app = Vue.createApp({
+        data() {
+            return {
+                test1: "All Praise Be To Allah",
+                expenses: [],
+                newDescription: '',
+                newAmount: '',
+                newCategory: '',
+                isNecessary: false,
+                budget: 1000
+            }
+        },
+        methods: {
+            // Method to add a new expense
+            addExpense() {
+                if(this.newDescription && this.newAmount > 0 && this.newCategory) {
+                    this.expenses.push({
+                        description: this.newDescription,
+                        amount: parseFloat(this.newAmount),
+                        category: this.newCategory,
+                        necessary: this.isNecessary
+                    });
+                    // Clear input fields after adding expenses
+                    this.newDescription = "";
+                    this.newAmount = 0;
+                    this.newCategory = "";
+                    this.isNecessary = false;
+                }
+            },
+            // Method to remove an expense
+            removeExpense(index) {
+                this.expenses.splice(index, 1);
+            }
+        },
+        computed: {
+            // Computed property to calculate the total amount of expenses
+            totalExpenses() {
+                return this.expenses.reduce((total, expense) => total + expense.amount, 0);
+            },
+            // Computed property to calculate the remaining budget
+            remainingBudget() {
+                return this.budget - this.totalExpenses;
+            }
+        }
+    });
+    app.mount("#app");
+</script>
+    
+</body>
+</html>
